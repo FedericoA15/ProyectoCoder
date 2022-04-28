@@ -71,18 +71,32 @@ html{
     color: black;
     text-decoration: none;
 }
+.nav__animacion:hover{
+    background-color: black;
+}
 .main{
     grid-area: main;
-    background-color: rgb(100, 100, 100);
+    background: rgb(130,130,130);
+    background: linear-gradient(0deg, rgba(130,130,130,1) 30%, rgba(57,57,57,1) 75%);
 }
 .main__titulo{
     display: flex;
     justify-content: center;
     font-size: 25px;
 }
-.section__banner--size{
+.section__banner{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     width: 100%;
+    gap: 20px;
+}
+.section__banner>.section__banner--size{
+    min-width: 100%;
+    scroll-snap-align: start;
     height: 550px;
+    text-align: center;
+    scroll-snap-type: center;
 }
 .main__fotos{
     display: grid;
