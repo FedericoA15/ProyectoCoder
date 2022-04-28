@@ -80,7 +80,7 @@ html{
     transition: background-size .3s;
 }
 .nav__animacion:hover, .nav__animacion:focus {
-    background-size: 100% 2px;
+    background-size: 95% 2px;
 }
 .main{
     grid-area: main;
