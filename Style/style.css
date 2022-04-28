@@ -71,8 +71,16 @@ html{
     color: black;
     text-decoration: none;
 }
-.nav__animacion:hover{
-    background-color: black;
+.nav__animacion {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.nav__animacion:hover, .nav__animacion:focus {
+    background-size: 100% 2px;
 }
 .main{
     grid-area: main;
@@ -94,16 +102,16 @@ html{
 .section__banner>.section__banner--size{
     min-width: 100%;
     scroll-snap-align: start;
-    height: 550px;
     text-align: center;
     scroll-snap-type: center;
 }
 .main__fotos{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 70% 70%;
+    grid-template-rows: 70% 70%;
     justify-content: flex-end;
     align-content: space-between;
+    margin-top: 25px;
 }
 .main__fotos--borde{
     border: 5px solid rgb(44, 44, 44);

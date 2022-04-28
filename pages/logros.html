@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../Style/style.css">
     <link rel="icon" href="../assets/icon.ico">
     <title>Omega Runner´s</title>
@@ -11,28 +12,28 @@
 <body>
     <div class="grid-container">
         <header class="header">
-            <div class="header__logo">
+            <div class="header__logo" data-aos="fade-left">
                 <img src="../assets/logo.jpg" alt="logo" class="header__logo--size">
             </div>
-            <div class="header__titulo">
+            <div class="header__titulo" data-aos="fade-left">
                 <h1 class="header__titulo--size"><strong>Omega Runner´s</strong></h1>
             </div>
-            <div class="header__titulo2">
+            <div class="header__titulo2" data-aos="fade-left">
                 <h2 class="header__titulo2--size"><strong>Alberto Almeida</strong></h2>
             </div>
         </header>
         <nav class="nav"> 
-            <ul class="nav__lista">
+            <ul class="nav__lista" data-aos="zoom-out-left"> 
                 <div class="nav__contenedor">
-                    <li><i class="fa-solid fa-house-user"></i><a href="../index.html">Inicio</a></li>
-                    <li><i class="fa-solid fa-square-check"></i><a href="asesoramiento.html">Asesoramiento</a></li>
-                    <li><i class="fa-solid fa-circle-question"></i><a href="quiensoy.html">¿Quien soy?</a></li>
-                    <li><i class="fa-solid fa-phone"></i><a href="contacto.html">Contacto</a></li>
+                    <li class="nav__animacion"><i class="fa-solid fa-house-user"></i><a href="../index.html">Inicio</a></li>
+                    <li class="nav__animacion"><i class="fa-solid fa-square-check"></i><a href="asesoramiento.html">Asesoramiento</a></li>
+                    <li class="nav__animacion"><i class="fa-solid fa-circle-question"></i><a href="quiensoy.html">¿Quien soy?</a></li>
+                    <li class="nav__animacion"><i class="fa-solid fa-phone"></i><a href="contacto.html">Contacto</a></li>
                 </div>
             </ul>
         </nav>
         <main class="main">
-            <div class="main__titulo">
+            <div class="main__titulo" data-aos="fade-right">
                 <h2 id="inicio">Mis logros</h2>
             </div>
             <div class="main__parrafo2">
@@ -85,5 +86,9 @@
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/39f0e05a2c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
