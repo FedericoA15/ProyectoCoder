@@ -99,11 +99,8 @@ html{
     width: 100%;
     gap: 20px;
 }
-.section__banner>.section__banner--size{
+.section__banner--size{
     min-width: 100%;
-    scroll-snap-align: start;
-    text-align: center;
-    scroll-snap-type: center;
 }
 .main__fotos{
     display: grid;
