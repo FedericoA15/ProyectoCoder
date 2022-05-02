@@ -13,6 +13,9 @@ html{
 #inicio{
     color: black;
 }
+    .nav-item{
+        font-size: 16px;
+    }
 .grid-container{
     display: grid;
     grid-template-areas:
@@ -57,33 +60,9 @@ html{
     font-size: 35px;
     color: rgb(255, 255, 255);
 }
-.nav{
-    background-color: rgb(69, 69, 69);
+#nav{
     grid-area: header-nav;
-}
-.nav__contenedor{
-    background-color: rgb(136, 136, 136);
-    width: 95%;
-    display: inline-flex;
-    justify-content: space-between;
-}
-.nav__contenedor li{
-    list-style: none;
-}
-.nav__contenedor a{
-    color: black;
-    text-decoration: none;
-}
-.nav__animacion {
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-}
-.nav__animacion:hover, .nav__animacion:focus {
-    background-size: 95% 2px;
+    background-color: rgb(69, 69, 69);
 }
 .main{
     grid-area: main;
@@ -97,11 +76,16 @@ html{
 }
 .section__banner{
     display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     width: 100%;
     gap: 20px;
 }
-.section__banner--size{
+.section__banner>.section__banner--size{
     min-width: 100%;
+    scroll-snap-align: start;
+    text-align: center;
+    scroll-snap-type: center;
 }
 .main__fotos{
     display: grid;
@@ -369,23 +353,11 @@ html{
         background-color: rgb(69, 69, 69);
         display: none;
     }
-    .nav{
+    #nav{
         grid-area: header;
         position: relative;
         align-self: flex-end;
-    }
-    .nav__contenedor{
-        background-color: rgb(136, 136, 136);
-        width: 100%;
-        display: inline-flex;
-        justify-content: space-between;
-    }
-    .nav__contenedor li{
-        list-style: none;
-    }
-    .nav__contenedor a{
-        color: black;
-        text-decoration: none;
+        background-color: rgb(69, 69, 69) !important;
     }
     .main{
         grid-area: main;
@@ -684,23 +656,11 @@ html{
         background-color: rgb(69, 69, 69);
         display: none;
     }
-    .nav{
+    #nav{
         grid-area: header;
         position: relative;
         align-self: flex-end;
-    }
-    .nav__contenedor{
-        background-color: rgb(136, 136, 136);
-        width: 100%;
-        display: inline-flex;
-        justify-content: space-between;
-    }
-    .nav__contenedor li{
-        list-style: none;
-    }
-    .nav__contenedor a{
-        color: black;
-        text-decoration: none;
+        background-color: rgb(69, 69, 69) !important;
     }
     .main{
         grid-area: main;
@@ -984,11 +944,11 @@ html{
         margin: 20px;
     }
 }
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1024px) and (max-width:1439px){
     .grid-container{
         display: grid;
         grid-template-areas:
-        "header header header-nav"
+        "header header header"
         "main main main"
         "footer footer footer"
         ;
@@ -997,60 +957,11 @@ html{
     }
     .header{
         grid-area: header;
-        background-color: rgb(69, 69, 69);
-    }
-    .header__logo{
-        display: flex;
-        width: 250px;
-        position: relative;
-        top: 50px;
-        left: 50px;
-    }
-    .header__logo--size{
-        width: 100%;
-    }
-    .header__titulo{
-        display: flex;
-        position: relative;
-        left: 250px;
-        bottom: 200px;
-    }
-    .header__titulo2{
-        display: flex;
-        position: relative;
-        bottom: 200px;
-        left: 520px;
-    }
-    .header__titulo--size{
-        font-size: 50px;
-        color: rgb(255, 255, 255);
-    }
-    .header__titulo2--size{
-        font-size: 35px;
-        color: rgb(255, 255, 255);
-    }
-    .nav{
-        grid-area: header-nav;
-        background-color: rgb(69, 69, 69);
-    }
-    .navbar-brand{
         display: none;
     }
-    .nav__contenedor{
-        background-color: rgb(131, 131, 131);
-        list-style: none;
-        display: inline-flex;
-        padding: 20px;
-        margin: 5px;
-        position: relative;
-        align-content: flex-end;
-        gap: 90px;
-        top: 250px;
-    }
-    .nav__contenedor a{
-        display: inline-flex;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
+    #nav{
+        grid-area: header !important;
+        background-color: rgb(69, 69, 69) !important;
     }
     .main{
         grid-area: main;
@@ -1370,31 +1281,15 @@ html{
         font-size: 35px;
         color: rgb(255, 255, 255);
     }
-    .nav{
+    #nav{
         grid-area: header-nav;
-        background-color: rgb(69, 69, 69);
+        background-color: rgb(69, 69, 69) !important;
     }
-    #nav__input{
+    .navbar-brand, .navbar-brand img{
         display: none;
     }
-    .nav__lista label{
-        display: none;
-    }
-    .nav__contenedor{
-        background-color: rgb(131, 131, 131);
-        list-style: none;
-        display: inline-flex;
-        padding: 20px;
-        margin: 5px;
-        position: relative;
-        align-content: flex-end;
-        gap: 90px;
-        top: 250px;
-    }
-    .nav__contenedor a{
-        display: inline-flex;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
+    .nav-item{
+        font-size: 20px;
     }
     .main{
         grid-area: main;
@@ -1431,6 +1326,7 @@ html{
         background-color: rgb(255, 255, 255);
         flex-wrap: wrap;
         position: relative;
+        bottom: 30px;
         width: 560px;
         height: 315px;
         left: 50px;

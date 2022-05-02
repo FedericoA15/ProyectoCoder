@@ -4,33 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="icon" href="../assets/icon.ico">
+    <link rel="stylesheet" href="../Style/style.css">
     <title>Omega Runner´s</title>
 </head>
 <body>
     <div class="grid-container">
         <header class="header">
-            <div class="header__logo" data-aos="fade-right">
-                <img src="../assets/logo.jpg" alt="logo" class="header__logo--size">
-            </div>
-            <div class="header__titulo" data-aos="fade-right">
-                <h1 class="header__titulo--size"><strong>Omega Runner´s</strong></h1>
-            </div>
-            <div class="header__titulo2" data-aos="fade-right">
-                <h2 class="header__titulo2--size"><strong>Alberto Almeida</strong></h2>
-            </div>
-        </header>
-        <nav class="nav"> 
-            <ul class="nav__lista" data-aos="zoom-out-right">
-                <div class="nav__contenedor">
-                    <li class="nav__animacion"><i class="fa-solid fa-house-user"></i><a href="../index.html">Inicio</a></li>
-                    <li class="nav__animacion"><i class="fa-solid fa-medal"></i><a href="logros.html">Mis logros</a></li>
-                    <li class="nav__animacion"><i class="fa-solid fa-circle-question"></i><a href="quiensoy.html">¿Quien soy?</a></li>
-                    <li class="nav__animacion"><i class="fa-solid fa-phone"></i><a href="contacto.html">Contacto</a></li>
+                <div class="header__logo" data-aos="fade-right">
+                    <img src="../assets/logo.jpg" alt="logo" class="header__logo--size">
                 </div>
-            </ul>
+                <div class="header__titulo" data-aos="fade-up">
+                    <h1 class="header__titulo--size"><strong>Omega Runner´s</strong></h1>
+                </div>
+                <div class="header__titulo2" data-aos="fade-up">
+                    <h2 class="header__titulo2--size"><strong>Alberto Almeida</strong></h2>
+                </div>
+        </header>
+        <nav id="nav" class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../assets/logo.jpg" alt="logo" style="width:100px;" class="rounded-pill nav__logo"></a>
+                <a class="navbar-brand nav__titulo">Omega Runner´s</a>
+                <a class="navbar-brand nav__titulo">Alberto Almeida</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-house-door" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-person-circle" href="quiensoy.html">¿Quien soy?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-trophy" href="logros.html">Mis logros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-telephone" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <main class="main">
             <div class="main__titulo" data-aos="fade-right">
@@ -102,5 +120,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
