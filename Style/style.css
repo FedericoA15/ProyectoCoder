@@ -10,6 +10,9 @@ html{
     font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
 }
+#inicio{
+    color: black;
+}
 .grid-container{
     display: grid;
     grid-template-areas:
@@ -94,8 +97,6 @@ html{
 }
 .section__banner{
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     width: 100%;
     gap: 20px;
 }
@@ -366,30 +367,7 @@ html{
     .header{
         grid-area: header;
         background-color: rgb(69, 69, 69);
-    }
-    .header__logo{
-        display: flex;
-        width: 100px;
-        position: relative;
-        top: 20px;
-        left: 20px;
-    }
-    .header__logo--size{
-        width: 100%;
-    }
-    .header__titulo{
-        display: inline-flex;
-        position: relative;
-        bottom: 50px;
-        left: 110px;
-        color: white;
-    }
-    .header__titulo2{
         display: none;
-    }
-    .header__titulo--size{
-        font-size: 35px;
-        color: rgb(255, 255, 255);
     }
     .nav{
         grid-area: header;
@@ -704,30 +682,7 @@ html{
     .header{
         grid-area: header;
         background-color: rgb(69, 69, 69);
-    }
-    .header__logo{
-        display: flex;
-        width: 100px;
-        position: relative;
-        top: 20px;
-        left: 20px;
-    }
-    .header__logo--size{
-        width: 100%;
-    }
-    .header__titulo{
-        display: inline-flex;
-        position: relative;
-        bottom: 50px;
-        left: 110px;
-        color: white;
-    }
-    .header__titulo2{
         display: none;
-    }
-    .header__titulo--size{
-        font-size: 35px;
-        color: rgb(255, 255, 255);
     }
     .nav{
         grid-area: header;
@@ -1078,10 +1033,7 @@ html{
         grid-area: header-nav;
         background-color: rgb(69, 69, 69);
     }
-    #nav__input{
-        display: none;
-    }
-    .nav__lista label{
+    .navbar-brand{
         display: none;
     }
     .nav__contenedor{

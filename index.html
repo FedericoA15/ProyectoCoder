@@ -23,15 +23,32 @@
                     <h2 class="header__titulo2--size"><strong>Alberto Almeida</strong></h2>
                 </div>
         </header>
-        <nav class="nav"> 
-            <ul class="nav__lista">
-                <div class="nav__contenedor">
-                    <li class="nav__animacion"><i class="fa-solid fa-square-check"></i><a href="pages/asesoramiento.html">Asesoramiento</a></li>
-                    <li class="nav__animacion"><i class="fa-solid fa-circle-question"></i><a href="pages/quiensoy.html">¿Quien soy?</a></li>
-                    <li class="nav__animacion"><i class="fa-solid fa-medal"></i><a href="pages/logros.html">Mis logros</a></li>
-                    <li class="nav__animacion"><i class="fa-solid fa-phone"></i><a href="pages/contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo.jpg" alt="logo" style="width:100px;" class="rounded-pill nav__logo"> 
+                </a>
+                <a class="navbar-brand nav__titulo" href="assets/logo.jpg">Omega Runner´s</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                    </ul>
                 </div>
-            </ul>
+            </div>
         </nav>
         <main class="main"> 
             <div class="main__titulo" data-aos="fade-up">
@@ -44,15 +61,15 @@
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner section__banner">
                         <div class="carousel-item active section__banner--size">
-                            <img src="assets/montañas.jpg" alt="montaña1" class="d-block w-100">
+                            <img src="assets/montañas.jpg" alt="montaña1" class="d-block w-100 section__banner--size">
                         </div>
                         <div class="carousel-item section__banner--size">
-                            <img src="assets/montañas2.jpg" alt="montaña2" class="d-block w-100">
+                            <img src="assets/montañas2.jpg" alt="montaña2" class="d-block w-100 section__banner--size">
                         </div>
                         <div class="carousel-item section__banner--size">
-                            <img src="assets/montañas3.jpg" alt="montaña3" class="d-block w-100">
+                            <img src="assets/montañas3.jpg" alt="montaña3" class="d-block w-100 section__banner--size">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
