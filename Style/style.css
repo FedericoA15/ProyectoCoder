@@ -64,6 +64,9 @@ html{
     grid-area: header-nav;
     background-color: rgb(69, 69, 69);
 }
+.nav__logo{
+    width: 250px;
+}
 .main{
     grid-area: main;
     background: rgb(130,130,130);
@@ -141,53 +144,20 @@ html{
 }
 .footer{
     grid-area: footer;
-    background-color: rgb(116, 116, 116);
+    background-color: rgb(51, 51, 51);
 }
-.footer__email{
-    position: relative;
-    display: flex;
-    justify-content: end;
-    right: 250px;
-}
-.footer__email--decoration{
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 25px;
-}
-.footer__redes{ 
-    position: relative;
-    display: flex;
-    justify-content: end;
-    bottom: 25px;
-    
-}
-.footer__parrafo{
-    display: inline-flex;
-    font-size: 25px;
-    padding: 5px;
-}
-.footer__redes img{
-    width: 50px;
+.footer__copyright{
+    background-color: rgb(62, 62, 62);
 }
 /* Contacto */
-.main__subtitulo{
-    display: flex;
-    margin: 15px;
-    flex-wrap: wrap;
-    width: 400px;
-    background-color: rgb(116, 116, 116);
-    border: 2px solid rgb(44, 44, 44);
-}
-.main__subtitulo2{
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin: 15px;
-    background-color: rgb(116, 116, 116);
-    border: 2px solid rgb(44, 44, 44);
-}
 .main__form{
-    font-size: 25px;
-    margin: 25px;
+    background-color: rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
+}
+.main__subtitulo{
+    background-color: rgb(95, 95, 95);
+    box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
+    border-radius: 2px;
 }
 /*asesoramiento*/
 .main__packs{
@@ -354,6 +324,9 @@ html{
         align-self: flex-end;
         background-color: rgb(69, 69, 69) !important;
     }
+    .nav__logo{
+        width: 100px;
+    }
     .main{
         grid-area: main;
         background-color: rgb(100, 100, 100);
@@ -415,58 +388,20 @@ html{
     }
     .footer{
         grid-area: footer;
-        background-color: rgb(116, 116, 116);
+        background-color: rgb(51, 51, 51);
     }
-    .footer__email{
-        position: relative;
-        display: flex;
-        justify-content: end;
-        right: 155px;
-        top: 15px;
-    }
-    .footer__email--decoration{
-        text-decoration: none;
-        color: whitesmoke;
-        font-size: 18px;
-    }
-    .footer__redes{ 
-        position: relative;
-        display: flex;
-        justify-content: end;
-        bottom: 15px;
-    }
-    .footer__parrafo{
-        display: flex;
-        font-size: 18px;
-        align-content: flex-start;
-    }
-    .footer__redes img{
-        width: 50px;
+    .footer__copyright{
+        background-color: rgb(62, 62, 62);
     }
     /* Contacto */
-    .main__subtitulo{
-        display: flex;
-        margin: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: auto;
-        height: 120px;
-        text-align: center;
-        background-color: rgb(116, 116, 116);
-        border: 2px solid rgb(44, 44, 44);
-    }
-    .main__subtitulo2{
-        display: inline-flex;
-        flex-wrap: wrap;
-        position: relative;
-        left: 35%;
-        background-color: rgb(116, 116, 116);
-        border: 2px solid rgb(44, 44, 44);
-    }
     .main__form{
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
+        background-color: rgb(136, 136, 136);
+        box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
+    }
+    .main__subtitulo{
+        background-color: rgb(95, 95, 95);
+        box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
+        border-radius: 2px;
     }
     /*asesoramiento*/
     .main__packs{
@@ -724,59 +659,20 @@ html{
     }
     .footer{
         grid-area: footer;
-        background-color: rgb(116, 116, 116);
+        background-color: rgb(51, 51, 51);
     }
-    .footer__email{
-        position: relative;
-        display: flex;
-        justify-content: end;
-        right: 155px;
-        top: 15px;
-    }
-    .footer__email--decoration{
-        text-decoration: none;
-        color: whitesmoke;
-        font-size: 18px;
-    }
-    .footer__redes{ 
-        position: relative;
-        display: flex;
-        justify-content: end;
-        bottom: 15px;
-    }
-    .footer__parrafo{
-        display: flex;
-        font-size: 18px;
-        align-content: flex-start;
-    }
-    .footer__redes img{
-        width: 50px;
+    .footer__copyright{
+        background-color: rgb(62, 62, 62);
     }
     /* Contacto */
-    .main__subtitulo{
-        display: flex;
-        margin: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: auto;
-        height: 120px;
-        text-align: center;
-        align-items: center;
-        background-color: rgb(116, 116, 116);
-        border: 2px solid rgb(44, 44, 44);
-    }
-    .main__subtitulo2{
-        display: inline-flex;
-        flex-wrap: wrap;
-        position: relative;
-        left: 35%;
-        background-color: rgb(116, 116, 116);
-        border: 2px solid rgb(44, 44, 44);
-    }
     .main__form{
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
+        background-color: rgb(136, 136, 136);
+        box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
+    }
+    .main__subtitulo{
+        background-color: rgb(95, 95, 95);
+        box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
+        border-radius: 2px;
     }
     /*asesoramiento*/
     .main__packs{
@@ -964,6 +860,12 @@ html{
         grid-area: header !important;
         background-color: rgb(69, 69, 69) !important;
     }
+    .nav__titulo{
+        font-size: 26px;
+    }
+    .nav-item a{
+        font-size: 24px;
+    }
     .main{
         grid-area: main;
         background-color: rgb(100, 100, 100);
@@ -1035,53 +937,20 @@ html{
     }
     .footer{
         grid-area: footer;
-        background-color: rgb(116, 116, 116);
+        background-color: rgb(51, 51, 51);
     }
-    .footer__email{
-        position: relative;
-        display: flex;
-        justify-content: end;
-        right: 250px;
-    }
-    .footer__email--decoration{
-        text-decoration: none;
-        color: whitesmoke;
-        font-size: 25px;
-    }
-    .footer__redes{ 
-        position: relative;
-        display: flex;
-        justify-content: end;
-        bottom: 15px;
-    }
-    .footer__parrafo{
-        display: flex;
-        font-size: 25px;
-        padding-left: 50px;
-        align-content: flex-end;
-    }
-    .footer__redes img{
-        width: 50px;
+    .footer__copyright{
+        background-color: rgb(62, 62, 62);
     }
     /* contacto */
-    .main__subtitulo{
-        display: flex;
-        margin: 15px;
-        flex-wrap: wrap;
-        width: 400px;
-        background-color: rgb(116, 116, 116);
-        border: 2px solid rgb(44, 44, 44);
-    }
-    .main__subtitulo2{
-        display: inline-flex;
-        flex-wrap: wrap;
-        margin: 15px;
-        background-color: rgb(116, 116, 116);
-        border: 2px solid rgb(44, 44, 44);
-    }
     .main__form{
-        font-size: 25px;
-        margin: 25px;
+        background-color: rgb(136, 136, 136);
+        box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
+    }
+    .main__subtitulo{
+        background-color: rgb(95, 95, 95);
+        box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
+        border-radius: 2px;
     }
     /*asesoramiento*/
     .main__packs{
@@ -1284,7 +1153,7 @@ html{
     }
     #nav{
         grid-area: header-nav;
-        background-color: rgb(69, 69, 69) !important;
+        background-color: rgb(69, 69, 69);
     }
     .navbar-brand, .navbar-brand img{
         display: none;
@@ -1369,52 +1238,20 @@ html{
     }
     .footer{
         grid-area: footer;
-        background-color: rgb(116, 116, 116);
+        background-color: rgb(51, 51, 51);
     }
-    .footer__email{
-        position: relative;
-        display: flex;
-        justify-content: end;
-        right: 250px;
-    }
-    .footer__email--decoration{
-        text-decoration: none;
-        color: whitesmoke;
-        font-size: 25px;
-    }
-    .footer__redes{ 
-        position: relative;
-        display: flex;
-        justify-content: end;
-        bottom: 15px;
-    }
-    .footer__parrafo{
-        display: inline-flex;
-        font-size: 25px;
-        padding: 5px;
-    }
-    .footer__redes img{
-        width: 50px;
+    .footer__copyright{
+        background-color: rgb(62, 62, 62);
     }
     /* Contacto */
-    .main__subtitulo{
-        display: flex;
-        margin: 15px;
-        flex-wrap: wrap;
-        width: 400px;
-        background-color: rgb(116, 116, 116);
-        border: 2px solid rgb(44, 44, 44);
-    }
-    .main__subtitulo2{
-        display: inline-flex;
-        flex-wrap: wrap;
-        margin: 15px;
-        background-color: rgb(116, 116, 116);
-        border: 2px solid rgb(44, 44, 44);
-    }
     .main__form{
-        font-size: 25px;
-        margin: 25px;
+        background-color: rgb(136, 136, 136);
+        box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
+    }
+    .main__subtitulo{
+        background-color: rgb(95, 95, 95);
+        box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
+        border-radius: 2px;
     }
     /*asesoramiento*/
     .main__packs{
@@ -1490,7 +1327,7 @@ html{
         background-color: rgb(136, 136, 136);
         border: 5px solid rgb(62, 62, 62);
         box-shadow: 4px 6px 18px -2px rgba(0,0,0,0.66);
-        overflow-y: scroll;
+        overflow-y: hidden;
     }
     .main__galerialogros{
         display: flex;

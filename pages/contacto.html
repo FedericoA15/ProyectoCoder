@@ -24,27 +24,26 @@
                     <h2 class="header__titulo2--size"><strong>Alberto Almeida</strong></h2>
                 </div>
         </header>
-        <nav id="nav" class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav id="nav" class="navbar navbar-expand-sm navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../assets/logo.jpg" alt="logo" style="width:100px;" class="rounded-pill nav__logo"></a>
-                <a class="navbar-brand nav__titulo">Omega Runner´s</a>
-                <a class="navbar-brand nav__titulo">Alberto Almeida</a>
+                <a class="navbar-brand" href="#"><img src="../assets/logo.jpg" alt="logo"  class="rounded-pill nav__logo"></a>
+                <a class="navbar-brand nav__titulo h1">Omega Runner´s</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mynavbar">
-                    <ul class="navbar-nav me-auto">
+                    <ul class="navbar-nav me-auto nav__lista position-relative" data-aos="fade-right">
                         <li class="nav-item">
-                            <a class="nav-link bi bi-house-door" href="../index.html">Inicio</a>
+                            <a class="nav-link bi bi-house-door text-black" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bi bi-person-circle" href="asesoramiento.html">Asesoramiento</a>
+                            <a class="nav-link bi bi-list-check text-black" href="asesoramiento.html">Asesoramiento</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bi bi-trophy" href="quiensoy.html">¿Quien soy?</a>
+                            <a class="nav-link bi bi-trophy text-black" href="logros.html">Mis logros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bi bi-telephone" href="logros.html">logros</a>
+                            <a class="nav-link bi bi-person-circle text-black" href="quiensoy.html">¿Quien soy?</a>
                         </li>
                     </ul>
                 </div>
@@ -54,38 +53,35 @@
             <div class="main__titulo" data-aos="fade-right">
                 <h2 id="inicio">Contacto</h2>
             </div>
-            <div class="main__subtitulo" data-aos="fade-right">
+            <div class="main__subtitulo text-black container text-center h2" data-aos="fade-right">
                 <h2>Para contarctame de forma mas personal y con dudas llena el formulario!</h2>
             </div>
-            <div class="main__subtitulo2" data-aos="fade-right">
+            <div class="main__subtitulo text-black container text-center h2" data-aos="fade-right">
                 <h2>Formulario:</h2>
             </div>
-            <div class="main__form">
-                <form action="" method="get" enctype="text/plain" id="contacto" data-aos="fade-right">
-                    <label for="">Nombre:</label>
-                    <input type="text" name="Nombre" placeholder="Escribe tu nombre..." required> <br>
-                    <label for="">Apellido:</label>
-                    <input type="text" name="Apellido" placeholder="Escribe tu apellido..." required> <br>
-                    <label for="">Email:</label>
-                    <input type="email" name="Email" placeholder="Escribe tu email..." required> <br>
-                    <label for="">Telefono:</label>
-                    <input type="text" name="Telefono" placeholder="Escribe tu telefono..." required> <br>
-                    <label for="">Mensaje:</label> <br>
-                    <textarea name="Mensaje" id="" cols="30" rows="10"placeholder="Escribe tu mensaje aqui..."></textarea> <br>
-                    <input type="submit">
-                    <input type="reset">
-                </form>
-            </div>
+            <form class="container main__form border-2 rounded border-dark" data-aos="fade-right">
+                <label class="h3" for="comment">Email:</label>
+                <input type="email" class="form-control form-control-lg mb-4" placeholder="ejemplo@gmail.com">
+                <label class="h3" for="comment">Nombre:</label>
+                <input type="text" class="form-control form-control-lg mb-4" placeholder="Nombre...">
+                <label class="h3" for="comment">Apellido:</label>
+                <input type="text" class="form-control form-control-lg mb-4" placeholder="Apellido...">
+                <label class="h3" for="comment">Celular:</label>
+                <input type="number" class="form-control form-control-lg mb-4" placeholder="Celular...">
+                <label class="h3" for="comment">Mensaje:</label>
+                <textarea class="form-control mb-5" rows="5" id="comment" name="text" placeholder="Mensaje..."></textarea>
+            </form>
         </main>
-        <footer class="footer">
-            <p class="footer__parrafo">© 2022 - Todos los derechos reservados</p>
-            <div class="footer__email">
-                <a class="footer__email--decoration" target="_blank" href="mailto:ejemplo@gmail.com">ejemplo@gmail.com</a>
+        <footer class="text-center text-white footer">
+            <div class="container p-4 pb-0">
+                <section class="mb-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" target="_blank" role="button"><i class="bi bi-facebook"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" target="_blank" role="button"><i class="bi bi-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="mailto:ejemplo@gmail.com" target="_blank" role="button"><i class="bi bi-envelope"></i></a>
+                </section>
             </div>
-            <div class="footer__redes">
-                <a target="_blank" href="https://www.instagram.com"><img src="../assets/instragram.png" alt="icono1" class="logo1"></a>
-                <a target="_blank" href="mailto:ejemplo@gmail.com"><img src="../assets/email.png" alt="icono2"></a>
-                <a target="_blank" href="https://www.facebook.com"><img src="../assets/facebook.png" alt="icono3"></a>
+            <div class="text-center p-3 footer__copyright">
+                <p>© 2022 Derechos reservados</p>
             </div>
         </footer>
     </div>
