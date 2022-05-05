@@ -14,7 +14,7 @@ html{
     color: black;
 }
 .nav-item{
-    font-size: 16px;
+    font-size: 28px;
 }
 .grid-container{
     display: grid;
@@ -66,6 +66,10 @@ html{
 }
 .nav__logo{
     width: 250px;
+}
+.nav-item:hover{
+    background-color: rgb(43, 42, 42);
+    transition: 0.5s;
 }
 .main{
     grid-area: main;
@@ -331,6 +335,9 @@ html{
         grid-area: main;
         background-color: rgb(100, 100, 100);
     }
+    .nav-item{
+        font-size: 18px;
+    }
     .main__titulo{
         display: flex;
         justify-content: center;
@@ -591,6 +598,9 @@ html{
         grid-area: header;
         background-color: rgb(69, 69, 69);
         display: none;
+    }
+    .nav-item{
+        font-size: 18px;
     }
     #nav{
         grid-area: header;
@@ -859,6 +869,9 @@ html{
     #nav{
         grid-area: header !important;
         background-color: rgb(69, 69, 69) !important;
+    }
+    .nav-item{
+        font-size: 20px;
     }
     .nav__titulo{
         font-size: 26px;
@@ -1159,7 +1172,7 @@ html{
         display: none;
     }
     .nav-item{
-        font-size: 20px;
+        font-size: 28px;
     }
     .nav__lista{
         background-color: rgb(136, 136, 136);
