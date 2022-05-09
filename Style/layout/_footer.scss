@@ -1,0 +1,43 @@
+.footer{
+    grid-area: footer;
+    background-color: rgb(51, 51, 51);
+}
+.footer__copyright{
+    background-color: $color1;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .footer{
+        grid-area: footer;
+        background-color: rgb(51, 51, 51);
+    }
+    .footer__copyright{
+        background-color: $color1;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .footer{
+        grid-area: footer;
+        background-color: rgb(51, 51, 51);
+    }
+    .footer__copyright{
+        background-color: $color1;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    .footer{
+        grid-area: footer;
+        background-color: rgb(51, 51, 51);
+    }
+    .footer__copyright{
+        background-color: $color1;
+    }
+}
+@media only screen and (min-width:1440px){
+    .footer{
+        grid-area: footer;
+        background-color: rgb(51, 51, 51);
+    }
+    .footer__copyright{
+        background-color: $color1;
+    }
+}

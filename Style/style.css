@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
-/* index, header, nav y footer */
 html {
   scroll-behavior: smooth;
   width: 100%;
@@ -12,21 +11,98 @@ html {
   box-sizing: border-box;
 }
 
-#inicio {
-  color: rgb(0, 0, 0);
+#nav {
+  grid-area: header-nav;
+  background-color: rgb(69, 69, 69);
 }
 
 .nav-item {
   font-size: 28px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas: "header header header-nav" "main main main" "footer footer footer";
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+.nav__logo {
+  width: 250px;
 }
 
+.nav-item:hover {
+  background-color: rgb(43, 42, 42);
+  transition: 0.5s;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #nav {
+    grid-area: header;
+    position: relative;
+    align-self: flex-end;
+    background-color: rgb(69, 69, 69) !important;
+  }
+
+  .nav__logo {
+    width: 100px;
+  }
+
+  .main {
+    grid-area: main;
+    background-color: rgb(100, 100, 100);
+  }
+
+  .nav-item {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 649px) {
+  .nav-item {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-item {
+    font-size: 18px;
+  }
+
+  #nav {
+    grid-area: header;
+    position: relative;
+    align-self: flex-end;
+    background-color: rgb(69, 69, 69) !important;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  #nav {
+    grid-area: header !important;
+    background-color: rgb(69, 69, 69) !important;
+  }
+
+  .nav-item {
+    font-size: 20px;
+  }
+
+  .nav__titulo {
+    font-size: 26px;
+  }
+
+  .nav-item a {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #nav {
+    grid-area: header-nav;
+    background-color: rgb(69, 69, 69);
+  }
+
+  .navbar-brand, .navbar-brand img {
+    display: none;
+  }
+
+  .nav-item {
+    font-size: 28px;
+  }
+
+  .nav__lista {
+    background-color: rgb(136, 136, 136);
+  }
+}
 .header {
   grid-area: header;
   background-color: rgb(69, 69, 69);
@@ -63,20 +139,114 @@ html {
   color: rgb(255, 255, 255);
 }
 
-#nav {
-  grid-area: header-nav;
-  background-color: rgb(69, 69, 69);
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    grid-area: header;
+    background-color: rgb(69, 69, 69);
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    grid-area: header;
+    background-color: rgb(69, 69, 69);
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .header {
+    grid-area: header;
+    display: none;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header {
+    grid-area: header;
+    background-color: rgb(69, 69, 69);
+  }
+
+  .header__logo {
+    display: flex;
+    width: 250px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+  }
+  .header__logo .header__logo--size {
+    width: 100%;
+  }
+
+  .header__titulo {
+    display: flex;
+    position: relative;
+    left: 250px;
+    bottom: 200px;
+  }
+  .header__titulo .header__titulo--size {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
+
+  .header__titulo2 {
+    display: flex;
+    position: relative;
+    bottom: 200px;
+    left: 520px;
+  }
+  .header__titulo2 .header__titulo2--size {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+  }
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(51, 51, 51);
 }
 
-.nav__logo {
-  width: 250px;
+.footer__copyright {
+  background-color: rgb(62, 62, 62);
 }
 
-.nav-item:hover {
-  background-color: rgb(43, 42, 42);
-  transition: 0.5s;
-}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    grid-area: footer;
+    background-color: rgb(51, 51, 51);
+  }
 
+  .footer__copyright {
+    background-color: rgb(62, 62, 62);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    grid-area: footer;
+    background-color: rgb(51, 51, 51);
+  }
+
+  .footer__copyright {
+    background-color: rgb(62, 62, 62);
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .footer {
+    grid-area: footer;
+    background-color: rgb(51, 51, 51);
+  }
+
+  .footer__copyright {
+    background-color: rgb(62, 62, 62);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .footer {
+    grid-area: footer;
+    background-color: rgb(51, 51, 51);
+  }
+
+  .footer__copyright {
+    background-color: rgb(62, 62, 62);
+  }
+}
 .main {
   grid-area: main;
   background: rgb(130, 130, 130);
@@ -160,221 +330,7 @@ html {
   width: 100%;
 }
 
-.footer {
-  grid-area: footer;
-  background-color: rgb(51, 51, 51);
-}
-
-.footer__copyright {
-  background-color: rgb(62, 62, 62);
-}
-
-/* Contacto */
-.main__form {
-  background-color: rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-}
-
-.main__subtitulo {
-  background-color: rgb(95, 95, 95);
-  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-  border-radius: 2px;
-}
-
-/*asesoramiento*/
-.main__packs {
-  display: grid;
-  grid-template-columns: 700px 700px;
-  grid-template-rows: 300px 300px;
-  font-size: 28px;
-  justify-content: center;
-  align-content: center;
-  gap: 40px;
-}
-.main__packs p {
-  padding: 15px;
-  background-color: rgb(135, 135, 135);
-  border: 4px solid rgb(44, 44, 44);
-  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-}
-
-.main__dirrecionamiento {
-  font-size: 30px;
-  display: flex;
-  height: 80px;
-  width: 100%;
-  justify-content: center;
-  margin-top: 50px;
-}
-.main__dirrecionamiento a {
-  background-color: rgb(136, 136, 136);
-  padding: 5px;
-  border: 4px solid rgb(68, 68, 68);
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-.main__tabla {
-  display: flex;
-  width: 100%;
-  height: 450px;
-  background-color: rgb(62, 62, 62);
-  font-size: 28px;
-  border: 3px solid rgb(94, 94, 94);
-  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-}
-.main__tabla a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-.main__tabla .main__tabla--text {
-  text-align: left;
-}
-
-.main__tabla--bordeder {
-  border-right: 4px solid black;
-}
-
-.main__tabla--bordeinf {
-  border-bottom: 4px solid black;
-}
-
-.main__contacto {
-  font-size: 30px;
-  display: flex;
-  justify-content: left;
-  padding-left: 20px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-.main__contacto p {
-  background-color: rgb(136, 136, 136);
-  border: 3px solid rgb(62, 62, 62);
-}
-
-/* mis logros */
-.main__parrafo2 {
-  font-size: 26px;
-  width: auto;
-  height: 600px;
-  margin: 50px 125px;
-  background-color: rgb(136, 136, 136);
-  border: 5px solid rgb(62, 62, 62);
-  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-}
-
-.main__galerialogros {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 5pc;
-}
-.main__galerialogros .main__marco {
-  width: 800px;
-}
-.main__galerialogros .main__fotopremios--size {
-  width: 95%;
-  border: 5px solid rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-}
-.main__galerialogros .main__fotopremios--size {
-  width: 95%;
-  border: 5px solid rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-}
-.main__galerialogros .main__fotopremios--size {
-  width: 95%;
-  border: 5px solid rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-}
-.main__galerialogros .main__fotoperu--size {
-  width: 95%;
-  border: 5px solid rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-}
-
-.main__parrafos {
-  background-color: rgb(78, 78, 78);
-  font-size: 24px;
-  height: 200px;
-  width: auto;
-  border: 5px solid rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-}
-
-/* quien soy */
-.main__contenedor {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 500px 500px;
-  justify-content: space-between;
-  row-gap: 100px;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-.main__contenedor .main__fotos--position1 {
-  border: 4px solid rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-}
-.main__contenedor .main__fotos--position2 {
-  border: 4px solid rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-}
-
-.main__parrafo3 {
-  width: 610px;
-  height: 450px;
-  overflow-y: hidden;
-}
-.main__parrafo3 p {
-  width: 100%;
-  height: 100%;
-}
-
-.main__ubicacion {
-  width: 610px;
-  height: 460px;
-}
-.main__ubicacion .main__ubicacion--size {
-  width: 100%;
-  height: 100%;
-}
-
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .grid-container {
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-  }
-
-  .header {
-    grid-area: header;
-    background-color: rgb(69, 69, 69);
-    display: none;
-  }
-
-  #nav {
-    grid-area: header;
-    position: relative;
-    align-self: flex-end;
-    background-color: rgb(69, 69, 69) !important;
-  }
-
-  .nav__logo {
-    width: 100px;
-  }
-
-  .main {
-    grid-area: main;
-    background-color: rgb(100, 100, 100);
-  }
-
-  .nav-item {
-    font-size: 18px;
-  }
-
   .main__titulo {
     display: flex;
     justify-content: center;
@@ -435,238 +391,9 @@ html {
 
   .body__flecha {
     display: none;
-  }
-
-  .footer {
-    grid-area: footer;
-    background-color: rgb(51, 51, 51);
-  }
-
-  .footer__copyright {
-    background-color: rgb(62, 62, 62);
-  }
-
-  /* Contacto */
-  .main__form {
-    background-color: rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-  }
-
-  .main__subtitulo {
-    background-color: rgb(95, 95, 95);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-    border-radius: 2px;
-  }
-
-  /*asesoramiento*/
-  .main__packs {
-    background-color: rgb(68, 68, 68);
-    height: 300px;
-    width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-    overflow-y: scroll;
-    padding-left: 5px;
-    border: 4px solid rgb(44, 44, 44);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    scroll-behavior: smooth;
-    display: block;
-    overflow-x: hidden;
-  }
-  .main__packs p {
-    font-size: 20px;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-  }
-
-  .main__dirrecionamiento {
-    display: flex;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 2px;
-    font-size: 16px;
-    position: relative;
-    justify-content: center;
-  }
-  .main__dirrecionamiento .main__dirrecionamiento--color {
-    color: white;
-    text-decoration: none;
-    background-color: rgb(136, 136, 136);
-    border: 4px solid rgb(44, 44, 44);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    height: 40px;
-    text-align: center;
-    width: 320px;
-  }
-
-  .main__tabla {
-    background-color: rgb(135, 135, 135);
-    width: auto;
-    height: 400px;
-    padding: 5px;
-    overflow-y: scroll;
-  }
-  .main__tabla a {
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  .main__tabla th {
-    font-size: 16px;
-  }
-
-  /* tuve que poner aca 14px de font size debido a un problema con el alineado asi que por comodidad lo deje asi esta vez */
-  .main__contacto {
-    font-size: 25px;
-    display: flex;
-    height: 120px;
-    width: auto;
-    margin: 20px;
-    background-color: transparent;
-    padding: 2px;
-    justify-content: center;
-    border: none;
-  }
-
-  .main__tabla--bordeder {
-    border-left: 2px solid black;
-  }
-
-  /* mis logros */
-  .main__parrafo2 {
-    background-color: rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    border: 2px solid rgb(44, 44, 44);
-    display: flex;
-    width: auto;
-    margin: 15px;
-    overflow-y: scroll;
-    padding: 15px;
-    font-size: 18px;
-  }
-
-  .main__galerialogros {
-    display: block;
-    padding: 0;
-  }
-  .main__galerialogros .main__marco {
-    width: auto;
-    background-color: rgb(44, 44, 44);
-    border: 3px solid rgb(131, 131, 131);
-    border-radius: 5px;
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    display: flex;
-    justify-content: center;
-    padding: 2px;
-    margin: 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .main__galerialogros .main__fotopremios--size {
-    width: 95%;
-  }
-  .main__galerialogros .main__fotoangostura--size {
-    width: 95%;
-  }
-  .main__galerialogros .main__fotoperu--size {
-    width: 95%;
-  }
-
-  .main__parrafos {
-    background-color: rgb(116, 116, 116);
-    margin: 10px;
-    border: 3px solid rgb(62, 62, 62);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    font-size: 18px;
-  }
-  .main__parrafos .main__parrafos--margin {
-    margin-bottom: 20px;
-  }
-
-  /* quien soy */
-  .main__contenedor {
-    margin-top: 0;
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .main__contenedor .main__fotos1 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  .main__contenedor .main__fotos--position1 {
-    border: 3px solid rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    margin-top: 25px;
-    width: 95%;
-  }
-  .main__contenedor .main__fotos--position2 {
-    border: 3px solid rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    margin-bottom: 25px;
-    width: 95%;
-  }
-  .main__contenedor .main__fotos2 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .main__parrafo3 {
-    width: 100%;
-    display: flex;
-    font-size: 16px;
-    padding: 5px;
-  }
-  .main__parrafo3 p {
-    background-color: rgb(136, 136, 136);
-    border: 3px solid rgb(62, 62, 62);
-    overflow-y: scroll;
-  }
-
-  .main__ubicacion {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .main__ubicacion--size {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 649px) {
-  .nav-item {
-    font-size: 12px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .grid-container {
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-  }
-
-  .header {
-    grid-area: header;
-    background-color: rgb(69, 69, 69);
-    display: none;
-  }
-
-  .nav-item {
-    font-size: 18px;
-  }
-
-  #nav {
-    grid-area: header;
-    position: relative;
-    align-self: flex-end;
-    background-color: rgb(69, 69, 69) !important;
-  }
-
   .main {
     grid-area: main;
     background-color: rgb(100, 100, 100);
@@ -733,235 +460,8 @@ html {
   .body__flecha {
     display: none;
   }
-
-  .footer {
-    grid-area: footer;
-    background-color: rgb(51, 51, 51);
-  }
-
-  .footer__copyright {
-    background-color: rgb(62, 62, 62);
-  }
-
-  /* Contacto */
-  .main__form {
-    background-color: rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-  }
-
-  .main__subtitulo {
-    background-color: rgb(95, 95, 95);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-    border-radius: 2px;
-  }
-
-  /*asesoramiento*/
-  .main__packs {
-    background-color: rgb(68, 68, 68);
-    height: 300px;
-    width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-    overflow-y: scroll;
-    padding-left: 5px;
-    border: 4px solid rgb(44, 44, 44);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    scroll-behavior: smooth;
-    display: block;
-  }
-  .main__packs p {
-    font-size: 20px;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-  }
-
-  .main__dirrecionamiento {
-    display: flex;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 2px;
-    font-size: 16px;
-    position: relative;
-    justify-content: center;
-  }
-  .main__dirrecionamiento .main__dirrecionamiento--color {
-    color: white;
-    text-decoration: none;
-    background-color: rgb(136, 136, 136);
-    border: 4px solid rgb(44, 44, 44);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    height: 40px;
-    text-align: center;
-    width: 320px;
-  }
-
-  .main__tabla {
-    background-color: rgb(135, 135, 135);
-    width: auto;
-    height: 400px;
-    padding: 5px;
-    overflow-y: scroll;
-  }
-  .main__tabla a {
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  .main__tabla th {
-    font-size: 16px;
-  }
-
-  .main__contacto {
-    font-size: 25px;
-    display: flex;
-    height: 120px;
-    width: auto;
-    margin: 20px;
-    background-color: transparent;
-    padding: 2px;
-    justify-content: center;
-    border: none;
-  }
-
-  .main__tabla--bordeder {
-    border-left: 2px solid black;
-  }
-
-  /* mis logros */
-  .main__parrafo2 {
-    background-color: rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    border: 2px solid rgb(44, 44, 44);
-    display: flex;
-    width: auto;
-    margin: 15px;
-    overflow-y: scroll;
-    padding: 15px;
-    font-size: 18px;
-  }
-
-  .main__galerialogros {
-    display: block;
-    padding: 0;
-  }
-  .main__galerialogros .main__marco {
-    width: auto;
-    background-color: rgb(44, 44, 44);
-    border: 3px solid rgb(131, 131, 131);
-    border-radius: 5px;
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    display: flex;
-    justify-content: center;
-    padding: 2px;
-    margin: 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .main__galerialogros .main__fotopremios--size {
-    width: 95%;
-  }
-  .main__galerialogros .main__fotoangostura--size {
-    width: 95%;
-  }
-  .main__galerialogros .main__fotoperu--size {
-    width: 95%;
-  }
-
-  .main__parrafos {
-    background-color: rgb(116, 116, 116);
-    margin: 10px;
-    border: 3px solid rgb(62, 62, 62);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    font-size: 18px;
-  }
-  .main__parrafos .main__parrafos--margin {
-    margin-bottom: 20px;
-  }
-
-  /* quien soy */
-  .main__contenedor {
-    margin-top: 0;
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .main__contenedor .main__fotos1 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  .main__contenedor .main__fotos--position1 {
-    border: 3px solid rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    margin-top: 25px;
-    width: 95%;
-  }
-  .main__contenedor .main__fotos--position2 {
-    border: 3px solid rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-    margin-bottom: 25px;
-    width: 95%;
-  }
-  .main__contenedor .main__fotos2 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .main__parrafo3 {
-    width: 100%;
-    display: flex;
-    font-size: 16px;
-    padding: 5px;
-  }
-  .main__parrafo3 p {
-    background-color: rgb(136, 136, 136);
-    border: 3px solid rgb(62, 62, 62);
-    overflow-y: scroll;
-  }
-
-  .main__ubicacion {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .main__ubicacion--size {
-    width: 100%;
-    margin: 20px;
-  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  .grid-container {
-    display: grid;
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-  }
-
-  .header {
-    grid-area: header;
-    display: none;
-  }
-
-  #nav {
-    grid-area: header !important;
-    background-color: rgb(69, 69, 69) !important;
-  }
-
-  .nav-item {
-    font-size: 20px;
-  }
-
-  .nav__titulo {
-    font-size: 26px;
-  }
-
-  .nav-item a {
-    font-size: 24px;
-  }
-
   .main {
     grid-area: main;
     background-color: rgb(100, 100, 100);
@@ -1038,256 +538,8 @@ html {
   .body__flecha img {
     width: 100%;
   }
-
-  .footer {
-    grid-area: footer;
-    background-color: rgb(51, 51, 51);
-  }
-
-  .footer__copyright {
-    background-color: rgb(62, 62, 62);
-  }
-
-  /* contacto */
-  .main__form {
-    background-color: rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-  }
-
-  .main__subtitulo {
-    background-color: rgb(95, 95, 95);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-    border-radius: 2px;
-  }
-
-  /*asesoramiento*/
-  .main__packs {
-    display: grid;
-    grid-template-columns: 700px 700px;
-    grid-template-rows: 300px 300px;
-    font-size: 28px;
-    justify-content: center;
-    align-content: center;
-    gap: 40px;
-  }
-  .main__packs p {
-    padding: 15px;
-    background-color: rgb(135, 135, 135);
-    border: 4px solid rgb(44, 44, 44);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-  }
-
-  .main__dirrecionamiento {
-    font-size: 30px;
-    display: flex;
-    height: 80px;
-    width: 100%;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  .main__dirrecionamiento .main__dirrecionamiento--color {
-    background-color: rgb(136, 136, 136);
-    padding: 5px;
-    border: 4px solid rgb(68, 68, 68);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-  }
-
-  .main__tabla {
-    display: flex;
-    width: 100%;
-    height: 450px;
-    background-color: rgb(62, 62, 62);
-    font-size: 25px;
-    border: 3px solid rgb(94, 94, 94);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-  }
-  .main__tabla .main__tabla--text {
-    text-align: left;
-  }
-  .main__tabla .main__tabla a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-  }
-
-  .main__tabla--bordeder {
-    border-right: 4px solid black;
-  }
-
-  .main__tabla--bordeinf {
-    border-bottom: 4px solid black;
-  }
-
-  .main__contacto {
-    font-size: 30px;
-    display: flex;
-    justify-content: left;
-    padding-left: 20px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
-  .main__contacto p {
-    background-color: rgb(136, 136, 136);
-    border: 3px solid rgb(62, 62, 62);
-  }
-
-  /* mis logros */
-  .main__parrafo2 {
-    font-size: 26px;
-    width: auto;
-    height: 600px;
-    margin: 50px 125px;
-    background-color: rgb(136, 136, 136);
-    border: 5px solid rgb(62, 62, 62);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
-    overflow-y: scroll;
-  }
-
-  .main__galerialogros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 5pc;
-  }
-  .main__galerialogros .main__marco {
-    width: 800px;
-  }
-  .main__galerialogros .main__fotopremios--size {
-    width: 95%;
-    border: 5px solid rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-  }
-  .main__galerialogros .main__fotoangostura--size {
-    width: 95%;
-    border: 5px solid rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-  }
-  .main__galerialogros .main__fotoperu--size {
-    width: 95%;
-    border: 5px solid rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-  }
-
-  .main__parrafos {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: rgb(78, 78, 78);
-    font-size: 24px;
-    height: 200px;
-    width: auto;
-    border: 5px solid rgb(136, 136, 136);
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-  }
-
-  /* quien soy */
-  .main__contenedor {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    gap: 50px;
-  }
-  .main__contenedor .main__fotos1 {
-    width: 400px;
-  }
-  .main__contenedor .main__fotos2 {
-    width: 400px;
-  }
-  .main__contenedor .main__fotos--position1 {
-    width: 100%;
-    border: 4px solid rgb(136, 136, 136);
-  }
-  .main__contenedor .main__fotos--position2 {
-    width: 100%;
-    border: 4px solid rgb(136, 136, 136);
-  }
-
-  .main__ubicacion {
-    width: 400px;
-    height: 420px;
-    border: 5px solid rgb(136, 136, 136);
-  }
-  .main__ubicacion .main__ubicacion--size {
-    width: 100%;
-    height: 100%;
-  }
-
-  .main__parrafo3 {
-    width: 400px;
-    margin-bottom: 50px;
-  }
-  .main__parrafo3 p {
-    width: 100%;
-    overflow-y: scroll;
-    background-color: rgb(136, 136, 136);
-    font-size: 20px;
-    border: 4px solid rgb(62, 62, 62);
-  }
 }
 @media only screen and (min-width: 1440px) {
-  .grid-container {
-    display: grid;
-    grid-template-areas: "header header header-nav" "main main main" "footer footer footer";
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-  }
-
-  .header {
-    grid-area: header;
-    background-color: rgb(69, 69, 69);
-  }
-
-  .header__logo {
-    display: flex;
-    width: 250px;
-    position: relative;
-    top: 50px;
-    left: 50px;
-  }
-  .header__logo .header__logo--size {
-    width: 100%;
-  }
-
-  .header__titulo {
-    display: flex;
-    position: relative;
-    left: 250px;
-    bottom: 200px;
-  }
-  .header__titulo .header__titulo--size {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-  }
-
-  .header__titulo2 {
-    display: flex;
-    position: relative;
-    bottom: 200px;
-    left: 520px;
-  }
-  .header__titulo2 .header__titulo2--size {
-    font-size: 35px;
-    color: rgb(255, 255, 255);
-  }
-
-  #nav {
-    grid-area: header-nav;
-    background-color: rgb(69, 69, 69);
-  }
-
-  .navbar-brand, .navbar-brand img {
-    display: none;
-  }
-
-  .nav-item {
-    font-size: 28px;
-  }
-
-  .nav__lista {
-    background-color: rgb(136, 136, 136);
-  }
-
   .main {
     grid-area: main;
     background-color: rgb(100, 100, 100);
@@ -1366,17 +618,19 @@ html {
   .body__flecha img {
     width: 100%;
   }
+}
+.main__form {
+  background-color: rgb(136, 136, 136);
+  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+}
 
-  .footer {
-    grid-area: footer;
-    background-color: rgb(51, 51, 51);
-  }
+.main__subtitulo {
+  background-color: rgb(95, 95, 95);
+  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+  border-radius: 2px;
+}
 
-  .footer__copyright {
-    background-color: rgb(62, 62, 62);
-  }
-
-  /* Contacto */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .main__form {
     background-color: rgb(136, 136, 136);
     box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
@@ -1387,8 +641,332 @@ html {
     box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
     border-radius: 2px;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main__form {
+    background-color: rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+  }
 
-  /*asesoramiento*/
+  .main__subtitulo {
+    background-color: rgb(95, 95, 95);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+    border-radius: 2px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .main__form {
+    background-color: rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+  }
+
+  .main__subtitulo {
+    background-color: rgb(95, 95, 95);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+    border-radius: 2px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main__form {
+    background-color: rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+  }
+
+  .main__subtitulo {
+    background-color: rgb(95, 95, 95);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+    border-radius: 2px;
+  }
+}
+.main__packs {
+  display: grid;
+  grid-template-columns: 700px 700px;
+  grid-template-rows: 300px 300px;
+  font-size: 28px;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+}
+.main__packs p {
+  padding: 15px;
+  background-color: rgb(135, 135, 135);
+  border: 4px solid rgb(44, 44, 44);
+  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+}
+
+.main__dirrecionamiento {
+  font-size: 30px;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+}
+.main__dirrecionamiento a {
+  background-color: rgb(136, 136, 136);
+  padding: 5px;
+  border: 4px solid rgb(68, 68, 68);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.main__tabla {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  background-color: rgb(62, 62, 62);
+  font-size: 28px;
+  border: 3px solid rgb(94, 94, 94);
+  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+}
+.main__tabla a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.main__tabla .main__tabla--text {
+  text-align: left;
+}
+
+.main__tabla--bordeder {
+  border-right: 4px solid black;
+}
+
+.main__tabla--bordeinf {
+  border-bottom: 4px solid black;
+}
+
+.main__contacto {
+  font-size: 30px;
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.main__contacto p {
+  background-color: rgb(136, 136, 136);
+  border: 3px solid rgb(62, 62, 62);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .main__packs {
+    background-color: rgb(68, 68, 68);
+    height: 300px;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-y: scroll;
+    padding-left: 5px;
+    border: 4px solid rgb(44, 44, 44);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    scroll-behavior: smooth;
+    display: block;
+    overflow-x: hidden;
+  }
+  .main__packs p {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .main__dirrecionamiento {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 2px;
+    font-size: 16px;
+    position: relative;
+    justify-content: center;
+  }
+  .main__dirrecionamiento .main__dirrecionamiento--color {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(136, 136, 136);
+    border: 4px solid rgb(44, 44, 44);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    height: 40px;
+    text-align: center;
+    width: 320px;
+  }
+
+  .main__tabla {
+    background-color: rgb(135, 135, 135);
+    width: auto;
+    height: 400px;
+    padding: 5px;
+    overflow-y: scroll;
+  }
+  .main__tabla a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .main__tabla th {
+    font-size: 16px;
+  }
+
+  .main__contacto {
+    font-size: 25px;
+    display: flex;
+    height: 120px;
+    width: auto;
+    margin: 20px;
+    background-color: transparent;
+    padding: 2px;
+    justify-content: center;
+    border: none;
+  }
+
+  .main__tabla--bordeder {
+    border-left: 2px solid black;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main__packs {
+    background-color: rgb(68, 68, 68);
+    height: 300px;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-y: scroll;
+    padding-left: 5px;
+    border: 4px solid rgb(44, 44, 44);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    scroll-behavior: smooth;
+    display: block;
+  }
+  .main__packs p {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .main__dirrecionamiento {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 2px;
+    font-size: 16px;
+    position: relative;
+    justify-content: center;
+  }
+  .main__dirrecionamiento .main__dirrecionamiento--color {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(136, 136, 136);
+    border: 4px solid rgb(44, 44, 44);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    height: 40px;
+    text-align: center;
+    width: 320px;
+  }
+
+  .main__tabla {
+    background-color: rgb(135, 135, 135);
+    width: auto;
+    height: 400px;
+    padding: 5px;
+    overflow-y: scroll;
+  }
+  .main__tabla a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .main__tabla th {
+    font-size: 16px;
+  }
+
+  .main__contacto {
+    font-size: 25px;
+    display: flex;
+    height: 120px;
+    width: auto;
+    margin: 20px;
+    background-color: transparent;
+    padding: 2px;
+    justify-content: center;
+    border: none;
+  }
+
+  .main__tabla--bordeder {
+    border-left: 2px solid black;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .main__packs {
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 300px 300px;
+    font-size: 28px;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+  }
+  .main__packs p {
+    padding: 15px;
+    background-color: rgb(135, 135, 135);
+    border: 4px solid rgb(44, 44, 44);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+  }
+
+  .main__dirrecionamiento {
+    font-size: 30px;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .main__dirrecionamiento .main__dirrecionamiento--color {
+    background-color: rgb(136, 136, 136);
+    padding: 5px;
+    border: 4px solid rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .main__tabla {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-color: rgb(62, 62, 62);
+    font-size: 25px;
+    border: 3px solid rgb(94, 94, 94);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+  }
+  .main__tabla .main__tabla--text {
+    text-align: left;
+  }
+  .main__tabla .main__tabla a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .main__tabla--bordeder {
+    border-right: 4px solid black;
+  }
+
+  .main__tabla--bordeinf {
+    border-bottom: 4px solid black;
+  }
+
+  .main__contacto {
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .main__contacto p {
+    background-color: rgb(136, 136, 136);
+    border: 3px solid rgb(62, 62, 62);
+  }
+}
+@media only screen and (min-width: 1440px) {
   .main__packs {
     display: grid;
     grid-template-columns: 700px 700px;
@@ -1467,8 +1045,207 @@ html {
     background-color: rgb(136, 136, 136);
     border: 3px solid rgb(62, 62, 62);
   }
+}
+.main__parrafo2 {
+  font-size: 26px;
+  width: auto;
+  height: 600px;
+  margin: 50px 125px;
+  background-color: rgb(136, 136, 136);
+  border: 5px solid rgb(62, 62, 62);
+  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+}
 
-  /* mis logros */
+.main__galerialogros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5pc;
+}
+.main__galerialogros .main__marco {
+  width: 800px;
+}
+.main__galerialogros .main__fotopremios--size {
+  width: 95%;
+  border: 5px solid rgb(136, 136, 136);
+  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+}
+.main__galerialogros .main__fotopremios--size {
+  width: 95%;
+  border: 5px solid rgb(136, 136, 136);
+  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+}
+.main__galerialogros .main__fotopremios--size {
+  width: 95%;
+  border: 5px solid rgb(136, 136, 136);
+  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+}
+.main__galerialogros .main__fotoperu--size {
+  width: 95%;
+  border: 5px solid rgb(136, 136, 136);
+  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+}
+
+.main__parrafos {
+  background-color: rgb(78, 78, 78);
+  font-size: 24px;
+  height: 200px;
+  width: auto;
+  border: 5px solid rgb(136, 136, 136);
+  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .main__parrafo2 {
+    background-color: rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    border: 2px solid rgb(44, 44, 44);
+    display: flex;
+    width: auto;
+    margin: 15px;
+    overflow-y: scroll;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .main__galerialogros {
+    display: block;
+    padding: 0;
+  }
+  .main__galerialogros .main__marco {
+    width: auto;
+    background-color: rgb(44, 44, 44);
+    border: 3px solid rgb(131, 131, 131);
+    border-radius: 5px;
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .main__galerialogros .main__fotopremios--size {
+    width: 95%;
+  }
+  .main__galerialogros .main__fotoangostura--size {
+    width: 95%;
+  }
+  .main__galerialogros .main__fotoperu--size {
+    width: 95%;
+  }
+
+  .main__parrafos {
+    background-color: rgb(116, 116, 116);
+    margin: 10px;
+    border: 3px solid rgb(62, 62, 62);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    font-size: 18px;
+  }
+  .main__parrafos .main__parrafos--margin {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main__parrafo2 {
+    background-color: rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    border: 2px solid rgb(44, 44, 44);
+    display: flex;
+    width: auto;
+    margin: 15px;
+    overflow-y: scroll;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .main__galerialogros {
+    display: block;
+    padding: 0;
+  }
+  .main__galerialogros .main__marco {
+    width: auto;
+    background-color: rgb(44, 44, 44);
+    border: 3px solid rgb(131, 131, 131);
+    border-radius: 5px;
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .main__galerialogros .main__fotopremios--size {
+    width: 95%;
+  }
+  .main__galerialogros .main__fotoangostura--size {
+    width: 95%;
+  }
+  .main__galerialogros .main__fotoperu--size {
+    width: 95%;
+  }
+
+  .main__parrafos {
+    background-color: rgb(116, 116, 116);
+    margin: 10px;
+    border: 3px solid rgb(62, 62, 62);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    font-size: 18px;
+  }
+  .main__parrafos .main__parrafos--margin {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .main__parrafo2 {
+    font-size: 26px;
+    width: auto;
+    height: 600px;
+    margin: 50px 125px;
+    background-color: rgb(136, 136, 136);
+    border: 5px solid rgb(62, 62, 62);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+    overflow-y: scroll;
+  }
+
+  .main__galerialogros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5pc;
+  }
+  .main__galerialogros .main__marco {
+    width: 800px;
+  }
+  .main__galerialogros .main__fotopremios--size {
+    width: 95%;
+    border: 5px solid rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+  }
+  .main__galerialogros .main__fotoangostura--size {
+    width: 95%;
+    border: 5px solid rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+  }
+  .main__galerialogros .main__fotoperu--size {
+    width: 95%;
+    border: 5px solid rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+  }
+
+  .main__parrafos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(78, 78, 78);
+    font-size: 24px;
+    height: 200px;
+    width: auto;
+    border: 5px solid rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+  }
+}
+@media only screen and (min-width: 1440px) {
   .main__parrafo2 {
     font-size: 26px;
     width: auto;
@@ -1514,8 +1291,198 @@ html {
     border: 5px solid rgb(136, 136, 136);
     box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
   }
+}
+.main__contenedor {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 500px 500px;
+  justify-content: space-between;
+  row-gap: 100px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.main__contenedor .main__fotos--position1 {
+  border: 4px solid rgb(136, 136, 136);
+  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+}
+.main__contenedor .main__fotos--position2 {
+  border: 4px solid rgb(136, 136, 136);
+  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+}
 
-  /* quien soy */
+.main__parrafo3 {
+  width: 610px;
+  height: 450px;
+  overflow-y: hidden;
+}
+.main__parrafo3 p {
+  width: 100%;
+  height: 100%;
+}
+
+.main__ubicacion {
+  width: 610px;
+  height: 460px;
+}
+.main__ubicacion .main__ubicacion--size {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .main__contenedor {
+    margin-top: 0;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main__contenedor .main__fotos1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .main__contenedor .main__fotos--position1 {
+    border: 3px solid rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    margin-top: 25px;
+    width: 95%;
+  }
+  .main__contenedor .main__fotos--position2 {
+    border: 3px solid rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    margin-bottom: 25px;
+    width: 95%;
+  }
+  .main__contenedor .main__fotos2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main__parrafo3 {
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+  }
+  .main__parrafo3 p {
+    background-color: rgb(136, 136, 136);
+    border: 3px solid rgb(62, 62, 62);
+    overflow-y: scroll;
+  }
+
+  .main__ubicacion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__ubicacion--size {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main__contenedor {
+    margin-top: 0;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main__contenedor .main__fotos1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .main__contenedor .main__fotos--position1 {
+    border: 3px solid rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    margin-top: 25px;
+    width: 95%;
+  }
+  .main__contenedor .main__fotos--position2 {
+    border: 3px solid rgb(136, 136, 136);
+    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
+    margin-bottom: 25px;
+    width: 95%;
+  }
+  .main__contenedor .main__fotos2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main__parrafo3 {
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+  }
+  .main__parrafo3 p {
+    background-color: rgb(136, 136, 136);
+    border: 3px solid rgb(62, 62, 62);
+    overflow-y: scroll;
+  }
+
+  .main__ubicacion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__ubicacion--size {
+    width: 100%;
+    margin: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .main__contenedor {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    gap: 50px;
+  }
+  .main__contenedor .main__fotos1 {
+    width: 400px;
+  }
+  .main__contenedor .main__fotos2 {
+    width: 400px;
+  }
+  .main__contenedor .main__fotos--position1 {
+    width: 100%;
+    border: 4px solid rgb(136, 136, 136);
+  }
+  .main__contenedor .main__fotos--position2 {
+    width: 100%;
+    border: 4px solid rgb(136, 136, 136);
+  }
+
+  .main__ubicacion {
+    width: 400px;
+    height: 420px;
+    border: 5px solid rgb(136, 136, 136);
+  }
+  .main__ubicacion .main__ubicacion--size {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main__parrafo3 {
+    width: 400px;
+    margin-bottom: 50px;
+  }
+  .main__parrafo3 p {
+    width: 100%;
+    overflow-y: scroll;
+    background-color: rgb(136, 136, 136);
+    font-size: 20px;
+    border: 4px solid rgb(62, 62, 62);
+  }
+}
+@media only screen and (min-width: 1440px) {
   .main__contenedor {
     margin-top: 50px;
     display: grid;
@@ -1569,6 +1536,45 @@ html {
   .main__ubicacion .main__ubicacion--size {
     width: 450px;
     height: 250px;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header-nav" "main main main" "footer footer footer";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header header-nav" "main main main" "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
   }
 }
 

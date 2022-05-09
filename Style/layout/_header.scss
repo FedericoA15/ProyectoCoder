@@ -1,0 +1,90 @@
+.header{
+    grid-area: header;
+    background-color: $colorheader-nav;
+}
+.header__logo{
+    display: flex;
+    width: 250px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    .header__logo--size{
+        width: 100%;
+    }
+    .header__titulo{
+        display: flex;
+        position: relative;
+        left: 250px;
+        bottom: 200px;
+        .header__titulo--size{
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    .header__titulo2{
+        display: flex;
+        position: relative;
+        bottom: 200px;
+        left: 520px;
+        .header__titulo2--size{
+            font-size: 35px;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .header{
+        grid-area: header;
+        background-color: $colorheader-nav;
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .header{
+        grid-area: header;
+        background-color: $colorheader-nav;
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    .header{
+        grid-area: header;
+        display: none;
+    }
+}
+@media only screen and (min-width:1440px){
+    .header{
+        grid-area: header;
+        background-color: $colorheader-nav;
+    }
+    .header__logo{
+        display: flex;
+        width: 250px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        .header__logo--size{
+            width: 100%;
+        }
+    }
+    .header__titulo{
+        display: flex;
+        position: relative;
+        left: 250px;
+        bottom: 200px;
+        .header__titulo--size{
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    .header__titulo2{
+        display: flex;
+        position: relative;
+        bottom: 200px;
+        left: 520px;
+        .header__titulo2--size{
+            font-size: 35px;
+            color: rgb(255, 255, 255);
+        }
+    }
+}

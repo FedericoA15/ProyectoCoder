@@ -1,0 +1,235 @@
+.main__parrafo2{
+    font-size: 26px;
+    width: auto;
+    height: 600px;
+    margin: 50px 125px;
+    background-color: $color2;
+    border: 5px solid $color1;
+    box-shadow: 4px 6px 18px -2px $colorsombra;
+}
+.main__galerialogros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5pc;
+    .main__marco{
+        width: 800px;
+    }
+    .main__fotopremios--size{
+        width: 95%;
+        border: 5px solid $color2;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+    }
+    .main__fotopremios--size{
+        width: 95%;
+        border: 5px solid $color2;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+    }
+    .main__fotopremios--size{
+        width: 95%;
+        border: 5px solid $color2;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+    }
+    .main__fotoperu--size{
+        width: 95%;
+        border: 5px solid $color2;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+    }
+}
+.main__parrafos{
+    background-color: rgb(78, 78, 78);
+    font-size: 24px;
+    height: 200px;
+    width: auto;
+    border: 5px solid $color2;
+    box-shadow: 4px 6px 18px 2px $colorsombra;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .main__parrafo2{
+        background-color: $color2;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+        border: 2px solid $colorborde;
+        display: flex;
+        width: auto;
+        margin: 15px;
+        overflow-y: scroll;
+        padding: 15px;
+        font-size: 18px;
+    }
+    .main__galerialogros{
+        display: block;
+        padding: 0;
+        .main__marco{
+            width: auto;
+            background-color: $colorborde;
+            border: 3px solid rgb(131, 131, 131);
+            border-radius: 5px;
+            box-shadow: 4px 6px 18px 2px $colorsombra;
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+            margin: 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .main__fotopremios--size{
+            width: 95%;
+        }
+        .main__fotoangostura--size{
+            width: 95%;
+        }
+        .main__fotoperu--size{
+            width: 95%;
+        }
+    }
+    .main__parrafos{
+        background-color: rgb(116, 116, 116);
+        margin: 10px;
+        border: 3px solid $color1;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+        font-size: 18px;
+        .main__parrafos--margin{
+            margin-bottom: 20px;
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .main__parrafo2{
+        background-color: $color2;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+        border: 2px solid $colorborde;
+        display: flex;
+        width: auto;
+        margin: 15px;
+        overflow-y: scroll;
+        padding: 15px;
+        font-size: 18px;
+    }
+    .main__galerialogros{
+        display: block;
+        padding: 0;
+        .main__marco{
+            width: auto;
+            background-color: $colorborde;
+            border: 3px solid rgb(131, 131, 131);
+            border-radius: 5px;
+            box-shadow: 4px 6px 18px 2px $colorsombra;
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+            margin: 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .main__fotopremios--size{
+            width: 95%;
+        }
+        .main__fotoangostura--size{
+            width: 95%;
+        }
+        .main__fotoperu--size{
+            width: 95%;
+        }
+    }
+    .main__parrafos{
+        background-color: rgb(116, 116, 116);
+        margin: 10px;
+        border: 3px solid $color1;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+        font-size: 18px;
+        .main__parrafos--margin{
+            margin-bottom: 20px;
+        }
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    .main__parrafo2{
+        font-size: 26px;
+        width: auto;
+        height: 600px;
+        margin: 50px 125px;
+        background-color: $color2;
+        border: 5px solid $color1;
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+        overflow-y: scroll;
+    }
+    .main__galerialogros{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5pc;
+        .main__marco{
+            width: 800px;
+        }
+        .main__fotopremios--size{
+            width: 95%;
+            border: 5px solid $color2;
+            box-shadow: 4px 6px 18px 2px $colorsombra;
+        }
+        .main__fotoangostura--size{
+            width: 95%;
+            border: 5px solid $color2;
+            box-shadow: 4px 6px 18px 2px $colorsombra;
+        }
+        .main__fotoperu--size{
+            width: 95%;
+            border: 5px solid $color2;
+            box-shadow: 4px 6px 18px 2px $colorsombra;
+        }
+    }
+    .main__parrafos{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: rgb(78, 78, 78);
+        font-size: 24px;
+        height: 200px;
+        width: auto;
+        border: 5px solid $color2;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+    }
+}
+@media only screen and (min-width:1440px){
+    .main__parrafo2{
+        font-size: 26px;
+        width: auto;
+        height: 600px;
+        margin: 50px 125px;
+        background-color: $color2;
+        border: 5px solid $color1;
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+        overflow-y: hidden;
+    }
+    .main__galerialogros{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5pc;
+        .main__marco{
+            width: 800px;
+        }
+        .main__fotopremios--size{
+            width: 95%;
+            border: 5px solid $color2;
+            box-shadow: 4px 6px 18px 2px $colorsombra;
+        }
+        .main__fotoangostura--size{
+            width: 95%;
+            border: 5px solid $color2;
+            box-shadow: 4px 6px 18px 2px $colorsombra;
+        }
+        .main__fotoperu--size{
+            width: 95%;
+            border: 5px solid $color2;
+            box-shadow: 4px 6px 18px 2px $colorsombra;
+        }
+    }
+    .main__parrafos{
+        margin: 20px;
+        background-color: rgb(78, 78, 78);
+        font-size: 24px;
+        height: 200px;
+        width: auto;
+        border: 5px solid $color2;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+    }
+}

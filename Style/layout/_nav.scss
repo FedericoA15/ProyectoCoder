@@ -1,0 +1,78 @@
+#nav{
+    grid-area: header-nav;
+    background-color: $colorheader-nav;
+}
+.nav-item{
+    font-size: 28px;
+}
+.nav__logo{
+    width: 250px;
+}
+.nav-item:hover{
+    background-color: rgb(43, 42, 42);
+    transition: 0.5s;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    #nav{
+        grid-area: header;
+        position: relative;
+        align-self: flex-end;
+        background-color: $colorheader-nav !important;
+    }
+    .nav__logo{
+        width: 100px;
+    }
+    .main{
+        grid-area: main;
+        background-color: rgb(100, 100, 100);
+    }
+    .nav-item{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 649px){
+    .nav-item{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .nav-item{
+        font-size: 18px;
+    }
+    #nav{
+        grid-area: header;
+        position: relative;
+        align-self: flex-end;
+        background-color: $colorheader-nav !important;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    #nav{
+        grid-area: header !important;
+        background-color: $colorheader-nav !important;
+    }
+    .nav-item{
+        font-size: 20px;
+    }
+    .nav__titulo{
+        font-size: 26px;
+    }
+    .nav-item a{
+        font-size: 24px;
+    }
+}
+@media only screen and (min-width:1440px){
+    #nav{
+        grid-area: header-nav;
+        background-color: $colorheader-nav;
+    }
+    .navbar-brand, .navbar-brand img{
+        display: none;
+    }
+    .nav-item{
+        font-size: 28px;
+    }
+    .nav__lista{
+        background-color: $color2;
+    }
+}

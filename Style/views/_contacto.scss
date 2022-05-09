@@ -1,0 +1,53 @@
+.main__form{
+    background-color: $color2;
+    box-shadow: 4px 6px 18px -2px $colorsombra;
+}
+.main__subtitulo{
+    background-color: rgb(95, 95, 95);
+    box-shadow: 4px 6px 18px -2px $colorsombra;
+    border-radius: 2px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .main__form{
+        background-color: $color2;
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+    }
+    .main__subtitulo{
+        background-color: rgb(95, 95, 95);
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+        border-radius: 2px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .main__form{
+        background-color: $color2;
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+    }
+    .main__subtitulo{
+        background-color: rgb(95, 95, 95);
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+        border-radius: 2px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    .main__form{
+        background-color: $color2;
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+    }
+    .main__subtitulo{
+        background-color: rgb(95, 95, 95);
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+        border-radius: 2px;
+    }
+}
+@media only screen and (min-width:1440px){
+    .main__form{
+        background-color: $color2;
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+    }
+    .main__subtitulo{
+        background-color: rgb(95, 95, 95);
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+        border-radius: 2px;
+    }
+}

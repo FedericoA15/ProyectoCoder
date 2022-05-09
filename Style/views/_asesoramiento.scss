@@ -1,0 +1,342 @@
+.main__packs{
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 300px 300px;
+    font-size: 28px;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    p{
+        padding: 15px;
+        background-color: rgb(135, 135, 135);
+        border: 4px solid $colorborde;
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+    }
+}
+.main__dirrecionamiento{
+    font-size: 30px;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    a{
+        background-color: $color2;
+        padding: 5px;
+        border: 4px solid rgb(68, 68, 68);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+}
+.main__tabla{
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-color: $color1;
+    font-size: 28px;
+    border: 3px solid rgb(94, 94, 94);
+    box-shadow: 4px 6px 18px -2px $colorsombra;
+    a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .main__tabla--text{
+        text-align: left;
+    }
+}
+.main__tabla--bordeder{
+    border-right: 4px solid black;
+}
+.main__tabla--bordeinf{
+    border-bottom: 4px solid black;
+}
+.main__contacto{
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    p{
+        background-color: $color2;
+        border: 3px solid $color1;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .main__packs{
+        background-color: rgb(68, 68, 68);
+        height: 300px;
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        overflow-y: scroll;
+        padding-left: 5px;
+        border: 4px solid $colorborde;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+        scroll-behavior: smooth;
+        display: block;
+        overflow-x: hidden;
+        p{
+            font-size: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    .main__dirrecionamiento{
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 2px;
+        font-size: 16px;
+        position: relative;
+        justify-content: center;
+        .main__dirrecionamiento--color{
+            color: white;
+            text-decoration: none;
+            background-color: $color2;
+            border: 4px solid $colorborde;
+            box-shadow: 4px 6px 18px 2px $colorsombra;
+            height: 40px;
+            text-align: center;
+            width: 320px;
+        }
+    }
+    .main__tabla{
+        background-color: rgb(135, 135, 135);
+        width: auto;
+        height: 400px;
+        padding: 5px;
+        overflow-y: scroll;
+        a{
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        th{
+            font-size: 16px;
+        }
+    }
+    .main__contacto{
+        font-size: 25px;
+        display: flex;
+        height: 120px;
+        width: auto;
+        margin: 20px;
+        background-color: transparent;
+        padding: 2px;
+        justify-content: center;
+        border: none;
+    }
+    .main__tabla--bordeder{
+        border-left: 2px solid black;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .main__packs{
+        background-color: rgb(68, 68, 68);
+        height: 300px;
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        overflow-y: scroll;
+        padding-left: 5px;
+        border: 4px solid $colorborde;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+        scroll-behavior: smooth;
+        display: block;
+        p{
+            font-size: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    .main__dirrecionamiento{
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 2px;
+        font-size: 16px;
+        position: relative;
+        justify-content: center;
+        .main__dirrecionamiento--color{
+            color: white;
+            text-decoration: none;
+            background-color: $color2;
+            border: 4px solid $colorborde;
+            box-shadow: 4px 6px 18px 2px $colorsombra;
+            height: 40px;
+            text-align: center;
+            width: 320px;
+        }
+    }
+    .main__tabla{
+        background-color: rgb(135, 135, 135);
+        width: auto;
+        height: 400px;
+        padding: 5px;
+        overflow-y: scroll;
+        a{
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        th{
+            font-size: 16px;
+        }
+    }
+    .main__contacto{
+        font-size: 25px;
+        display: flex;
+        height: 120px;
+        width: auto;
+        margin: 20px;
+        background-color: transparent;
+        padding: 2px;
+        justify-content: center;
+        border: none;
+    }
+    .main__tabla--bordeder{
+        border-left: 2px solid black;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    .main__packs{
+        display: grid;
+        grid-template-columns: 700px 700px;
+        grid-template-rows: 300px 300px;
+        font-size: 28px;
+        justify-content: center;
+        align-content: center;
+        gap: 40px;
+        p{
+            padding: 15px;
+            background-color: rgb(135, 135, 135);
+            border: 4px solid $colorborde;
+            box-shadow: 4px 6px 18px -2px $colorsombra;
+        }
+    }
+    .main__dirrecionamiento{
+        font-size: 30px;
+        display: flex;
+        height: 80px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 50px;
+        .main__dirrecionamiento--color{
+            background-color: $color2;
+            padding: 5px;
+            border: 4px solid rgb(68, 68, 68);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    }
+    .main__tabla{
+        display: flex;
+        width: 100%;
+        height: 450px;
+        background-color: $color1;
+        font-size: 25px;
+        border: 3px solid rgb(94, 94, 94);
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+        .main__tabla--text{
+            text-align:left;
+        }
+        .main__tabla a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    }
+    .main__tabla--bordeder{
+        border-right: 4px solid black;
+    }
+    .main__tabla--bordeinf{
+        border-bottom: 4px solid black;
+    }
+    .main__contacto{
+        font-size: 30px;
+        display: flex;
+        justify-content: left;
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        p{
+            background-color: $color2;
+            border: 3px solid $color1;
+        }
+    }
+}
+@media only screen and (min-width:1440px){
+    .main__packs{
+        display: grid;
+        grid-template-columns: 700px 700px;
+        grid-template-rows: 300px 300px;
+        font-size: 28px;
+        justify-content: center;
+        align-content: center;
+        gap: 40px;
+        p{
+            padding: 15px;
+            background-color: rgb(135, 135, 135);
+            border: 4px solid $colorborde;
+            box-shadow: 4px 6px 18px -2px $colorsombra;
+        }
+    }
+    .main__dirrecionamiento{
+        font-size: 30px;
+        display: flex;
+        height: 80px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 50px;
+        .main__dirrecionamiento--color{
+            background-color: $color2;
+            padding: 5px;
+            border: 4px solid rgb(68, 68, 68);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    }
+    .main__tabla{
+        display: flex;
+        width: 100%;
+        height: 450px;
+        background-color: $color1;
+        font-size: 25px;
+        border: 3px solid rgb(94, 94, 94);
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+        a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .main__tabla--text{
+            text-align:left;
+        }
+    }
+    .main__tabla--text{
+        text-align:left;
+    }
+    .main__tabla a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .main__tabla--bordeder{
+        border-right: 4px solid black;
+    }
+    .main__tabla--bordeinf{
+        border-bottom: 4px solid black;
+    }
+    .main__contacto{
+        font-size: 30px;
+        display: flex;
+        justify-content: left;
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        p{
+            background-color: $color2;
+            border: 3px solid $color1;
+        }
+    }
+}
