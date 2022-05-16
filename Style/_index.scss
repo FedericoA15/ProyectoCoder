@@ -48,17 +48,13 @@
     box-shadow: 4px 6px 18px -2px $colorsombra;
 }
 .main__parrafo{
+    @include styleparrafo;
     font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
     width: 800px;
     height: 500px;
     left: 50px;
     bottom: 800px;
     border: 5px solid rgb(79, 79, 79); 
-    background-color: rgb(110, 110, 110);
-    box-shadow: 4px 6px 18px -2px $colorsombra;
 }
 .body__flecha{
     width: 50px;
@@ -113,17 +109,13 @@
         justify-content: center ;
     }
     .main__parrafo{
+        @include styleparrafo;
         font-size: 16px;
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        background-color: rgb(79, 79, 79);
         width: auto;
         left: 0;
         bottom: 0;
         padding-left: 5px;
         margin: 5px;
-        box-shadow: 4px 6px 18px 2px $colorsombra;
     }
     .body__flecha{
         display: none;
@@ -174,17 +166,13 @@
         justify-content: center ;
     }
     .main__parrafo{
+        @include styleparrafo;
         font-size: 16px;
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        background-color: rgb(79, 79, 79);
         width: auto;
         left: 0;
         bottom: 0;
         padding-left: 5px;
         margin: 5px;
-        box-shadow: 4px 6px 18px 2px $colorsombra;
     }
     .body__flecha{
         display: none;
@@ -236,17 +224,13 @@
         box-shadow: 4px 6px 18px -2px $colorsombra;
     }
     .main__parrafo{
+        @include styleparrafo;
         font-size: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
         width: 800px;
         height: auto;
         left: 50px;
         bottom: 5px;
         border: 5px solid rgb(79, 79, 79); 
-        background-color: rgb(110, 110, 110);
-        box-shadow: 4px 6px 18px -2px $colorsombra;
     }
     .body__flecha{
         width: 50px;
@@ -307,19 +291,15 @@
         box-shadow: 4px 6px 18px -2px $colorsombra;
     }
     .main__parrafo{
+        @include styleparrafo;
         font-size: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
         width: 50%;
         margin-right: 50px;
         margin-left: 15px;
         height: 500px;
         left: 600px;
         bottom: 350px;
-        border: 5px solid rgb(79, 79, 79); 
-        background-color: rgb(110, 110, 110);
-        box-shadow: 4px 6px 18px -2px $colorsombra;
+        border: 5px solid rgb(79, 79, 79);
     }
     .body__flecha{
         width: 50px;

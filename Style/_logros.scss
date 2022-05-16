@@ -21,19 +21,13 @@
         box-shadow: 4px 6px 18px 2px $colorsombra;
     }
     .main__fotopremios--size{
-        width: 95%;
-        border: 5px solid $color2;
-        box-shadow: 4px 6px 18px 2px $colorsombra;
+        @extend .main__fotopremios--size;
     }
     .main__fotopremios--size{
-        width: 95%;
-        border: 5px solid $color2;
-        box-shadow: 4px 6px 18px 2px $colorsombra;
+        @extend .main__fotopremios--size;
     }
     .main__fotoperu--size{
-        width: 95%;
-        border: 5px solid $color2;
-        box-shadow: 4px 6px 18px 2px $colorsombra;
+        @extend .main__fotopremios--size
     }
 }
 .main__parrafos{

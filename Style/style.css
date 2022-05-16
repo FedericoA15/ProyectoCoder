@@ -34,7 +34,7 @@ html {
     grid-area: header;
     position: relative;
     align-self: flex-end;
-    background-color: rgb(69, 69, 69) !important;
+    background-color: rgb(69, 69, 69);
   }
 
   .nav__logo {
@@ -64,13 +64,13 @@ html {
     grid-area: header;
     position: relative;
     align-self: flex-end;
-    background-color: rgb(69, 69, 69) !important;
+    background-color: rgb(69, 69, 69);
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   #nav {
-    grid-area: header !important;
-    background-color: rgb(69, 69, 69) !important;
+    grid-area: header;
+    background-color: rgb(69, 69, 69);
   }
 
   .nav-item {
@@ -142,14 +142,12 @@ html {
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     grid-area: header;
-    background-color: rgb(69, 69, 69);
     display: none;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .header {
     grid-area: header;
-    background-color: rgb(69, 69, 69);
     display: none;
   }
 }
@@ -205,6 +203,18 @@ html {
 
 .footer__copyright {
   background-color: rgb(62, 62, 62);
+}
+
+.btn--colors1:hover {
+  color: #3b5998;
+}
+
+.btn--colors2:hover {
+  color: #C13584;
+}
+
+.btn--colors3:hover {
+  color: #382c1e;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -304,17 +314,17 @@ html {
 }
 
 .main__parrafo {
-  font-size: 20px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  background-color: rgb(110, 110, 110);
+  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+  font-size: 20px;
   width: 800px;
   height: 500px;
   left: 50px;
   bottom: 800px;
   border: 5px solid rgb(79, 79, 79);
-  background-color: rgb(110, 110, 110);
-  box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
 }
 
 .body__flecha {
@@ -376,17 +386,17 @@ html {
   }
 
   .main__parrafo {
-    font-size: 16px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    background-color: rgb(79, 79, 79);
+    background-color: rgb(110, 110, 110);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+    font-size: 16px;
     width: auto;
     left: 0;
     bottom: 0;
     padding-left: 5px;
     margin: 5px;
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
   }
 
   .body__flecha {
@@ -444,17 +454,17 @@ html {
   }
 
   .main__parrafo {
-    font-size: 16px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    background-color: rgb(79, 79, 79);
+    background-color: rgb(110, 110, 110);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+    font-size: 16px;
     width: auto;
     left: 0;
     bottom: 0;
     padding-left: 5px;
     margin: 5px;
-    box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
   }
 
   .body__flecha {
@@ -513,17 +523,17 @@ html {
   }
 
   .main__parrafo {
-    font-size: 20px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    background-color: rgb(110, 110, 110);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+    font-size: 20px;
     width: 800px;
     height: auto;
     left: 50px;
     bottom: 5px;
     border: 5px solid rgb(79, 79, 79);
-    background-color: rgb(110, 110, 110);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
   }
 
   .body__flecha {
@@ -591,10 +601,12 @@ html {
   }
 
   .main__parrafo {
-    font-size: 20px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    background-color: rgb(110, 110, 110);
+    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
+    font-size: 20px;
     width: 50%;
     margin-right: 50px;
     margin-left: 15px;
@@ -602,8 +614,6 @@ html {
     left: 600px;
     bottom: 350px;
     border: 5px solid rgb(79, 79, 79);
-    background-color: rgb(110, 110, 110);
-    box-shadow: 4px 6px 18px -2px rgba(0, 0, 0, 0.66);
   }
 
   .body__flecha {
@@ -1065,27 +1075,11 @@ html {
 .main__galerialogros .main__marco {
   width: 800px;
 }
-.main__galerialogros .main__fotopremios--size {
+.main__galerialogros .main__fotopremios--size, .main__galerialogros .main__fotoperu--size {
   width: 95%;
   border: 5px solid rgb(136, 136, 136);
   box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
 }
-.main__galerialogros .main__fotopremios--size {
-  width: 95%;
-  border: 5px solid rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-}
-.main__galerialogros .main__fotopremios--size {
-  width: 95%;
-  border: 5px solid rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-}
-.main__galerialogros .main__fotoperu--size {
-  width: 95%;
-  border: 5px solid rgb(136, 136, 136);
-  box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
-}
-
 .main__parrafos {
   background-color: rgb(78, 78, 78);
   font-size: 24px;
@@ -1125,7 +1119,7 @@ html {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .main__galerialogros .main__fotopremios--size {
+  .main__galerialogros .main__fotopremios--size, .main__galerialogros .main__fotoperu--size {
     width: 95%;
   }
   .main__galerialogros .main__fotoangostura--size {
@@ -1176,7 +1170,7 @@ html {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .main__galerialogros .main__fotopremios--size {
+  .main__galerialogros .main__fotopremios--size, .main__galerialogros .main__fotoperu--size {
     width: 95%;
   }
   .main__galerialogros .main__fotoangostura--size {
@@ -1218,7 +1212,7 @@ html {
   .main__galerialogros .main__marco {
     width: 800px;
   }
-  .main__galerialogros .main__fotopremios--size {
+  .main__galerialogros .main__fotopremios--size, .main__galerialogros .main__fotoperu--size {
     width: 95%;
     border: 5px solid rgb(136, 136, 136);
     box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);
@@ -1266,7 +1260,7 @@ html {
   .main__galerialogros .main__marco {
     width: 800px;
   }
-  .main__galerialogros .main__fotopremios--size {
+  .main__galerialogros .main__fotopremios--size, .main__galerialogros .main__fotoperu--size {
     width: 95%;
     border: 5px solid rgb(136, 136, 136);
     box-shadow: 4px 6px 18px 2px rgba(0, 0, 0, 0.66);

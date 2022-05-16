@@ -5,6 +5,16 @@
 .footer__copyright{
     background-color: $color1;
 }
+$mapa: (
+    colors1: #3b5998,
+    colors2: #C13584,
+    colors3: #382c1e 
+);
+@each $colors1,$color in $mapa {
+    .btn--#{$colors1}:hover {
+        color: $color;
+    }
+}
 @media only screen and (min-width: 320px) and (max-width: 767px){
     .footer{
         grid-area: footer;

@@ -1,6 +1,6 @@
 #nav{
     grid-area: header-nav;
-    background-color: $colorheader-nav;
+    background-color: map-get($map: $estilo, $key: color-oscuro);
 }
 .nav-item{
     font-size: 28px;
@@ -15,9 +15,9 @@
 @media only screen and (min-width: 320px) and (max-width: 767px){
     #nav{
         grid-area: header;
-        position: relative;
-        align-self: flex-end;
-        background-color: $colorheader-nav !important;
+        position: map-get($map:$estilo, $key:posicion);
+        align-self: map-get($map: $estilo, $key: aliniamiento);
+        background-color: map-get($map: $estilo, $key: color-oscuro);
     }
     .nav__logo{
         width: 100px;
@@ -41,15 +41,15 @@
     }
     #nav{
         grid-area: header;
-        position: relative;
-        align-self: flex-end;
-        background-color: $colorheader-nav !important;
+        position: map-get($map:$estilo, $key:posicion);
+        align-self: map-get($map: $estilo, $key: aliniamiento);
+        background-color: map-get($map: $estilo, $key: color-oscuro);
     }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px){
     #nav{
-        grid-area: header !important;
-        background-color: $colorheader-nav !important;
+        grid-area: header ;
+        background-color: map-get($map: $estilo, $key: color-oscuro);
     }
     .nav-item{
         font-size: 20px;
@@ -64,7 +64,7 @@
 @media only screen and (min-width:1440px){
     #nav{
         grid-area: header-nav;
-        background-color: $colorheader-nav;
+        background-color: map-get($map: $estilo, $key: color-oscuro );
     }
     .navbar-brand, .navbar-brand img{
         display: none;

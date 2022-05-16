@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 // un import de las variables usadas por el momento
-@import "./variables/variables";
+@import "./variables";
 // import con reset de pagina y configuraciones propias
-@import "./options/reset";
+@import "./reset";
 // import con todo el nav
-@import "./layout/nav";
+@import "./nav";
 // import con las configuraciones del header
-@import "./layout/header";
+@import "./header";
 // import con las configuraciones del footer
-@import "./layout/footer";
+@import "./footer";
 // import con las configuraciones del index
-@import "./views/index";
+@import "./index";
 // import con las configuraciones del contacto
-@import "./views/contacto";
+@import "./contacto";
 // import con las configuraciones del asesoramiento
-@import "./views/asesoramiento";
+@import "./asesoramiento";
 // import con las configuraciones de logros
-@import "./views/logros";
+@import "./logros";
 // import con las configuraciones de quien soy
-@import "./views/quiensoy";
+@import "./quiensoy";
 
 .grid-container{
     display: grid;

@@ -1,0 +1,18 @@
+$colorborde: rgb(44, 44, 44);
+$colorsombra: rgba(0,0,0,0.66);
+$color1: rgb(62, 62, 62);
+$color2: rgb(136, 136, 136);
+
+$estilo: (
+    vista: none,
+    posicion: relative,
+    aliniamiento: flex-end,
+    color-oscuro: rgb(69, 69, 69)
+);
+@mixin styleparrafo {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: rgb(110, 110, 110);
+    box-shadow: 4px 6px 18px -2px $colorsombra;
+}
