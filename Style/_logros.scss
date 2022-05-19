@@ -20,6 +20,7 @@
         border: 5px solid $color2;
         box-shadow: 4px 6px 18px 2px $colorsombra;
     }
+    // decidi usar el extend solo en esta parte ya que al no poder aplicarse entre media querias aca se complementa bien debido a que tienen estilos muy similar estos objetos
     .main__fotopremios--size{
         @extend .main__fotopremios--size;
     }

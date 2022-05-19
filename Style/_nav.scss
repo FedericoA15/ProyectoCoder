@@ -1,3 +1,4 @@
+// en el nav se aplico junto el color y algunas cosas mas los estilos declarados en el map-get que se encuentran en variables
 #nav{
     grid-area: header-nav;
     background-color: map-get($map: $estilo, $key: color-oscuro);

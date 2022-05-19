@@ -47,6 +47,7 @@
     border: 5px solid $colorborde;
     box-shadow: 4px 6px 18px -2px $colorsombra;
 }
+// aca use el include de algunas variables de los parrafos que se repetetian varias veces como su estilo y sombreado
 .main__parrafo{
     @include styleparrafo;
     font-size: 20px;
