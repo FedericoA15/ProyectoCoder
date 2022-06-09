@@ -1,8 +1,16 @@
 .main__parrafo2{
     font-size: 26px;
     width: auto;
-    height: 600px;
-    margin: 50px 125px;
+    height: auto;
+    background-color: $color2;
+    border: 5px solid $color1;
+    box-shadow: 4px 6px 18px -2px $colorsombra;
+}
+.main__objetivos_container{
+    font-size: 26px;
+    width: auto;
+    height: auto;
+
     background-color: $color2;
     border: 5px solid $color1;
     box-shadow: 4px 6px 18px -2px $colorsombra;
@@ -11,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5pc;
+    padding: 5px;
     .main__marco{
         width: 800px;
     }
@@ -34,10 +42,15 @@
 .main__parrafos{
     background-color: rgb(78, 78, 78);
     font-size: 24px;
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 100%;
     border: 5px solid $color2;
     box-shadow: 4px 6px 18px 2px $colorsombra;
+    p{
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+    }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px){
     .main__parrafo2{
@@ -46,6 +59,19 @@
         border: 2px solid $colorborde;
         display: flex;
         width: auto;
+        height: auto;
+        margin: 15px;
+        overflow-y: scroll;
+        padding: 15px;
+        font-size: 18px;
+    }
+    .main__objetivos_container{
+        background-color: $color2;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+        border: 2px solid $colorborde;
+        display: flex;
+        width: auto;
+        height: auto;
         margin: 15px;
         overflow-y: scroll;
         padding: 15px;
@@ -80,11 +106,12 @@
     .main__parrafos{
         background-color: rgb(116, 116, 116);
         margin: 10px;
+        width: auto;
         border: 3px solid $color1;
         box-shadow: 4px 6px 18px 2px $colorsombra;
         font-size: 18px;
-        .main__parrafos--margin{
-            margin-bottom: 20px;
+        p{
+            font-size: 20px;
         }
     }
 }
@@ -94,6 +121,19 @@
         box-shadow: 4px 6px 18px 2px $colorsombra;
         border: 2px solid $colorborde;
         display: flex;
+        height: auto;
+        width: auto;
+        margin: 15px;
+        overflow-y: scroll;
+        padding: 15px;
+        font-size: 18px;
+    }
+    .main__objetivos_container{
+        background-color: $color2;
+        box-shadow: 4px 6px 18px 2px $colorsombra;
+        border: 2px solid $colorborde;
+        display: flex;
+        height: auto;
         width: auto;
         margin: 15px;
         overflow-y: scroll;
@@ -129,11 +169,12 @@
     .main__parrafos{
         background-color: rgb(116, 116, 116);
         margin: 10px;
+        width: auto;
         border: 3px solid $color1;
         box-shadow: 4px 6px 18px 2px $colorsombra;
         font-size: 18px;
-        .main__parrafos--margin{
-            margin-bottom: 20px;
+        p{
+            font-size: 22px;
         }
     }
 }
@@ -141,8 +182,16 @@
     .main__parrafo2{
         font-size: 26px;
         width: auto;
-        height: 600px;
-        margin: 50px 125px;
+        height: auto;
+        background-color: $color2;
+        border: 5px solid $color1;
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+        overflow-y: scroll;
+    }
+    .main__objetivos_container{
+        font-size: 26px;
+        width: auto;
+        height: auto;
         background-color: $color2;
         border: 5px solid $color1;
         box-shadow: 4px 6px 18px -2px $colorsombra;
@@ -152,7 +201,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 5pc;
         .main__marco{
             width: 800px;
         }
@@ -177,8 +225,8 @@
         margin-bottom: 20px;
         background-color: rgb(78, 78, 78);
         font-size: 24px;
-        height: 200px;
-        width: auto;
+        height: auto;
+        width: 100%;
         border: 5px solid $color2;
         box-shadow: 4px 6px 18px 2px $colorsombra;
     }
@@ -187,7 +235,17 @@
     .main__parrafo2{
         font-size: 26px;
         width: auto;
-        height: 600px;
+        height: auto;
+        margin: 50px 125px;
+        background-color: $color2;
+        border: 5px solid $color1;
+        box-shadow: 4px 6px 18px -2px $colorsombra;
+        overflow-y: hidden;
+    }
+    .main__objetivos_container{
+        font-size: 26px;
+        height: auto;
+        width: auto;
         margin: 50px 125px;
         background-color: $color2;
         border: 5px solid $color1;
@@ -222,9 +280,14 @@
         margin: 20px;
         background-color: rgb(78, 78, 78);
         font-size: 24px;
-        height: 200px;
-        width: auto;
+        height: auto;
+        width: 100%;
         border: 5px solid $color2;
         box-shadow: 4px 6px 18px 2px $colorsombra;
+        p{
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+        }
     }
 }

@@ -64,6 +64,7 @@
     }
     .main__parrafo3{
         width: 100%;
+        height: auto;
         display: flex;
         font-size: 16px;
         padding: 5px;
@@ -80,7 +81,7 @@
     }
     .main__ubicacion--size{
         width: 100%;
-        margin-bottom: 20px;
+        padding-bottom: 25px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -114,6 +115,7 @@
     }
     .main__parrafo3{
         width: 100%;
+        height: auto;
         display: flex;
         font-size: 16px;
         padding: 5px;
@@ -131,6 +133,7 @@
     .main__ubicacion--size{
         width: 100%;
         margin: 20px;
+        padding-bottom: 25px;
     }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px){
@@ -167,6 +170,7 @@
     }
     .main__parrafo3{
         width: 400px;
+        height: auto;
         margin-bottom: 50px;
         p{
             width: 100%;
